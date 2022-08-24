@@ -92,3 +92,25 @@ tmux attach-session -t 0
 ```
 sysctl -w net.ipv4.ping_group_range="0 1000"
 ```
+
+* create systemd service file with timer
+```
+<name>.service
+[Unit]
+Description=<service description>
+
+[Service]
+ExecStart=<path/to/script.sh>
+
+<name>.timer
+[Unit]
+Description=<timer description>
+Requires=<name>.service
+
+[Timer]
+Unit=<name>.service
+OnCalendar=*-*-* 00:00:00
+
+[Install]
+WantedBy=multi-user.target
+```
