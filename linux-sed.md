@@ -1,4 +1,4 @@
-# sed - stremline editor
+# sed - streamline editor
 
 #### basics
 * show contents
