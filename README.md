@@ -1,5 +1,5 @@
 # Cheatsheets
-This is a collection of cheat sheets and notes on various topics, mainly focused around scripting programming languages, Linux stuff and DevOps tools.
+This is a collection of cheat sheets and notes on various topics, mainly focused around scripting programming languages, Linux command line and DevOps tools.
 
 ### ansible.md
 Ansible cli options and ad hoc commands
