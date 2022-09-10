@@ -6,9 +6,14 @@ This repository is a collection of cheat sheets and notes on various topics, mai
 * ```css.md``` - Really basic CSS stuff.
 * ```docker.md``` - Commands to administrate docker containers.
 * ```linux-arch.md``` - Commands used to setup Arch Linux distribution.
+* ```linux-awk.md``` - awk command to edit cli output.
 * ```linux-beeper.md``` - Play Empire Anthem on motherboard beeper.
 * ```linux-infra.md``` - Infrastructure administrations tools, like ```ldapsearch```, ```dig``` etc.
+* ```linux-iptables.md``` - Firewall configuration with iptables.
+* ```linux-kernel.md``` - Modify and install custom Linux kernel.
+* ```linux-process.md``` - Find information about running processes and top utility.
 * ```linux-random.md``` - Some random Linux commands, i.e copy cli output to clipboard, check GUI session etc.
+* ```linux-sed.md``` - sed command to edit cli output.
 * ```linux-ssh.md``` - Commands to setup ssh authentication between servers and it's configuration.
 * ```vagrant.md``` - Setup Vagrant box and run it.
 * ```vim.md``` - vim command key bindings.
