@@ -9,6 +9,7 @@ This repository is a collection of cheat sheets and notes on various topics, mai
 * ```linux-awk.md``` - awk command to edit cli output.
 * ```linux-beeper.md``` - Play Empire Anthem on motherboard beeper.
 * ```linux-drivers.md``` - Information on how drivers are processed in Linux.
+* ```linux-fdisk.md``` - Create and modify partitions.
 * ```linux-infra.md``` - Infrastructure administrations tools, like ```ldapsearch```, ```dig``` etc.
 * ```linux-iptables.md``` - Firewall configuration with iptables.
 * ```linux-kernel.md``` - Modify and install custom Linux kernel.
