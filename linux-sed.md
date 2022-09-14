@@ -23,6 +23,7 @@ basic structure ```s/old_word/new_word/```
 
 #### substituting words
 * substituting every word occurence ```sed 's/1003/XXXXX/' sedd.txt```
+* substituting with _ delimiter ```echo /path/to/file | sed 's_path/to_PATH/TO_'```
 
 #### examples
 * make changes in all occurences
