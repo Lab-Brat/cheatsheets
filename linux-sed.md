@@ -36,3 +36,14 @@ sed '$a this is the last line' sedd.txt
 ```
 sed 's/1003/XXXXX/' sedd.txt
 ```
+
+#### examples
+* make changes in all occurences
+```console
+labbrat@pop-os:~$ cat test_sed.txt 
+http://www.example.com/index.html
+labbrat@pop-os:~$ 
+labbrat@pop-os:~$ sed -i 's/com/org/' test_sed.txt
+labbrat@pop-os:~$ cat test_sed.txt 
+http://www.example.org/index.html
+```
