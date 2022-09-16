@@ -15,10 +15,12 @@ This repository is a collection of cheat sheets and notes on various topics, mai
 * ```linux-iptables.md``` - Firewall configuration with iptables.
 * ```linux-kernel.md``` - Modify and install custom Linux kernel.
 * ```linux-logs.md``` - Manage logs and configuration of a centralizied log server.
+* ```linux-network.md``` - Basic network managing, such as configuration of network interfaces and ports.
 * ```linux-process.md``` - Find information about running processes and top utility.
 * ```linux-random.md``` - Some random Linux commands, i.e copy cli output to clipboard, check GUI session etc.
 * ```linux-sed.md``` - sed command to edit cli output.
 * ```linux-ssh.md``` - Commands to setup ssh authentication between servers and it's configuration.
+* ```linux-users-acess.md``` - Manage users, groups and their access.
 * ```vagrant.md``` - Setup Vagrant box and run it.
 * ```vim.md``` - vim command key bindings.
 * ```virtualization.md``` - Automate different virtualization platforms.
