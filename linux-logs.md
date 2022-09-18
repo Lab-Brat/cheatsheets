@@ -23,3 +23,9 @@ Basic commands
 * view logs as they arrive ```journalctl -f```
 * view 10 lines of a process log ```journalctl -n 10 /usr/bin/sshd```
 * set time constraint on the log view ```journalctl --since=yesterday --until=now```
+
+
+### rsyslog
+Configuration
+* main configuration file ```/etc/rsyslog.conf```
+* additional configuration files ```/etc/rsyslog.d/```
