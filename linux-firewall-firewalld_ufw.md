@@ -8,3 +8,7 @@ Ports
 * Reload firewall
   * ```firewall-cmd --reload```
   * ```systemctl restart firewalld```
+
+
+### Useful Links
+Fedora ```firewalld``` documentation: https://docs.fedoraproject.org/en-US/quick-docs/firewalld/
