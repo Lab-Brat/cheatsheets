@@ -15,5 +15,19 @@
 #### Registry
 * list available images from local registry ```curl -X GET http://localhost:5000/v2/_catalog```
 
+#### Dockerfile
+* build image from a Dockerfile in current directory ```docker build -t <image-name> .```
+* Dockerfile example
+```dockerfile
+FROM fedora:latest
 
+# install rsyslog
+RUN dnf -y update
+RUN dnf install -y rsyslog
 
+# copy configuration file
+COPY rsyslog.conf /etc/rsyslog.conf
+
+# run rsyslog
+ENTRYPOINT ["rsyslogd", "-n"]
+```
