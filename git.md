@@ -11,6 +11,7 @@ git push -f
 ```
 
 #### Config
+COnfiguration to work with 2 ```git``` accounts, Github and Gitlab for example. 3 configuration files will be needed - ```.gitconfig```, ```.gitconfig-lab``` and ```.gitconfig-work```.  
 main config
 ```
 [includeIf "gitdir:~/github"]
