@@ -10,9 +10,10 @@ This repository is a collection of cheat sheets and notes on various topics, mai
 * ```linux-beeper.md``` - Play Empire Anthem on motherboard beeper.
 * ```linux-drivers.md``` - Information on how drivers are processed in Linux.
 * ```linux-fdisk.md``` - Create and modify partitions.
+* ```linux-firewall-firewalld_ufw.md``` - RHEL specific firewalld and Debian specific ufw.
+* ```linux-firewall-iptables.md``` - Firewall configuration with iptables.
 * ```linux-grub.md``` - Boot process and grub configuration.
 * ```linux-infra.md``` - Infrastructure administrations tools, like ```ldapsearch```, ```dig``` etc.
-* ```linux-iptables.md``` - Firewall configuration with iptables.
 * ```linux-kernel.md``` - Modify and install custom Linux kernel.
 * ```linux-logs.md``` - Manage logs and configuration of a centralizied log server.
 * ```linux-network.md``` - Basic network managing, such as configuration of network interfaces and ports.
