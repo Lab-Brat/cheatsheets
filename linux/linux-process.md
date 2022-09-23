@@ -3,13 +3,14 @@
 #### Basics
 * `ps aux` - list all running processes
 * `kill -9 <pid>` - terminate process
-* `pkill -t <proc_name>` - terminate procees by name
+* `pkill -9 <proc_name>` - terminate procees by name
+<br/>
 
 #### Kill SSH sessions
 Commands:
 * `w`and `who`- show who is logged on
 * `tty`- show current users pseudo terminal
-* `ps -ft pts/1`: get process id for the pseudo terminal  
+* `ps -ft pts/1`: get PID of a pseudo terminal  
 
 Kill SSH session:
 * Find sessions
