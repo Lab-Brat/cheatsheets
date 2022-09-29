@@ -2,6 +2,10 @@
 This repository is a collection of cheat sheets and notes on various topics, mainly focused around scripting programming languages, Linux command line and DevOps tools.
 
 #### cheatsheets
+* ```ansible``` - Directory of cheatsheets about Ansible.
+  * ```ansible-ad-hoc.md``` - Ansible ad hoc commands.
+  * ```ansible-playbook.md``` - run Ansible playbook and advanced concepts.
+  * ```ansible.md``` - Ansible cli options and ad hoc commands.
 * ```linux``` - Directory of cheatsheets on various Linux topics.
   * ```linux-arch.md``` - Commands used to setup Arch Linux distribution.
   * ```linux-awk.md``` - awk command to edit cli output.
@@ -20,7 +24,6 @@ This repository is a collection of cheat sheets and notes on various topics, mai
   * ```linux-sed.md``` - sed command to edit cli output.
   * ```linux-ssh.md``` - Commands to setup ssh authentication between servers and it's configuration.
   * ```linux-users-acess.md``` - Manage users, groups and their access.
-* ```ansible.md``` - Ansible cli options and ad hoc commands.
 * ```css.md``` - Really basic CSS stuff.
 * ```docker.md``` - Commands to administrate docker containers.
 * ```vagrant.md``` - Setup Vagrant box and run it.
