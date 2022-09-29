@@ -53,20 +53,3 @@ doc: https://docs.ansible.com/ansible/latest/reference_appendices/config.html
 #### Extra Options
 * increase amount (20) of parallel run forks ```ansible all -a 'hostname' -f 20/```
 * limit connection to a certain host ```ansible all -b -a "service ntpd restart" --limit "*.4"```
-
-#### ansible-playbook
-##### Inventory
-* custom inventory ```ansible-playbook -i curom_inventory playbook.yaml```
-
-##### Limit
-* limit playbook to groups ```ansible-playbook playbook.yml --limit webservers```
-* limit playbook to hosts ```ansible-playbook playbook.yml --limit test1.lab```
-
-##### List
-* list hosts ```ansible-playbook playbook.yaml --list-hosts```
-
-##### Concurrency
-* run tasks concurrently ```ansible-playbook init_config.yaml --forks=2```
-
-##### Dry Run
-* dry run ```ansible-playbook init_config.yaml --check```
