@@ -1,6 +1,6 @@
 ### Git
 
-#### Undo changes
+#### Drop changes
 ```
 git rebase -i HEAD~1
 #change 'pick' to 'drop'
@@ -9,6 +9,18 @@ git add .
 git commit -m 'rebase'
 git push -f
 ```
+
+#### Change commit info
+```
+git rebase -i HEAD~2
+#change 'pick' to 'edit'
+#change commit author
+git commit --amend --author "LabBrat <xoovoox@protonmail.com>" --no-edit
+git rebase --continue
+git push -f
+```
+
+#### 
 
 #### Config
 COnfiguration to work with 2 ```git``` accounts, Github and Gitlab for example. 3 configuration files will be needed - ```.gitconfig```, ```.gitconfig-lab``` and ```.gitconfig-work```.  
