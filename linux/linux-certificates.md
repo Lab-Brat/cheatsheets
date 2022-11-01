@@ -56,3 +56,9 @@ certtool --generate-certificate \
          --load-ca-privkey ca-key.pem \
          --template client.cfg
 ```
+
+#### Verify Certificate
+* Check CA - cert
+```
+openssl verify -verbose -CAfile ca.pem client-cert.pem
+```
