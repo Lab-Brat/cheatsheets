@@ -2,7 +2,7 @@
 
 #### Create self-signed TLS certificates
 * Create CA template
-'''
+```
 cat <<EOF > ca.cfg
 organization = "HomeLab"
 unit = "Me"
@@ -14,10 +14,10 @@ ca
 signing_key
 cert_signing_key
 EOF
-'''
+```
 
 * Create client certificate template
-'''
+```
 cat <<EOF > client.cfg
 organization = "HomeLab"
 unit = "Me"
@@ -29,19 +29,19 @@ challenge_password =
 tls_www_client
 tls_www_server
 EOF
-'''
+```
 
 * Create CA
-'''
+```
 certtool --generate-privkey --outfile ca-key.pem
 certtool --generate-self-signed    \
          --load-privkey ca-key.pem \
          --outfile ca.pem  \
          --template ca.cfg
-'''
+```
 
 * Create Certificate
-'''
+```
 certtool --generate-privkey \
          --outfile client-key.pem \
          --sec-param High
@@ -55,4 +55,4 @@ certtool --generate-certificate \
          --load-ca-certificate ca.pem \
          --load-ca-privkey ca-key.pem \
          --template client.cfg
-'''
+```
