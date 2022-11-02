@@ -129,6 +129,15 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 #### Post installation
+* connect to wifi
+```
+nmcli dev
+nmcli dev up <device> 
+nmcli radio wifi
+nmcli dev wifi list
+nmcli dev wifi connect <Wi-Fi SSID> passwod <Wi-Fi password>
+```
+
 * install xorg + gnome
 ```
 pacman -S xf86-video-amdgpu xorg xorg-init gnome
