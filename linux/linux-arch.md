@@ -12,10 +12,38 @@ iwctl --passphrase passphrase station device connect SSID
 * set time
 ```
 timedatectl set-ntp true
-timedatectl set-timezone Eurpoe/Moscow
+timedatectl set-timezone Eurpoe/Istanbul
 ```
 
-* parted
+* create boot and encrypted main partitions
+```
+# write random data on disk
+shred --random-source=/dev/urandom --iterations=1 /dev/nvme0n1
+
+# create a partition table
+parted -s /dev/nvme0n1 mklabel gpt
+
+# create a boot partition
+parted -s /dev/nvme0n1 mkpart boot fat32 1MiB 257MiB
+parted -s /dev/nvme0n1 set 1 esp on
+mkfs.fat -F 32 /dev/nvme0n1p1
+
+# create encrypted lvm parition
+parted -s /dev/nvme0n1 mkpart cryptlvm 257MiB '100%'
+cryptsetup luksFormat /dev/nvme0n1p2
+# enter 'YES', and enter a strong password
+cryptsestup open /dev/nvme0n1p2 cryptlvm
+pvcreate /dev/mapper/cryptlvm
+vgcreate volgrp /dev/mapper/cryptlvm
+
+# create swap partition
+lvcreate -L 8G volgrp -n swap
+mkswap /dev/volgrp/swap
+
+# create main partition
+lvcreate -l '100%FREE' volgrp -n system
+mkfs.ext4 -F /dev/volgrp/system
+```
 
 * install packages
 ```
