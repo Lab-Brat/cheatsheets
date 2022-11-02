@@ -1,5 +1,5 @@
-# Arch Linux
-#### OS Installation. 
+### Arch Linux
+#### OS Pre-Installation
 * connect to wifi
 ```
 iwctl 
@@ -45,6 +45,7 @@ lvcreate -l '100%FREE' volgrp -n system
 mkfs.ext4 -F /dev/volgrp/system
 ```
 
+#### OS Installation
 * install packages
 ```
 vim /etc/pacman.conf
