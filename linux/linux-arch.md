@@ -72,14 +72,54 @@ passwd
 pacman -S NetworkManager git vim
 ```
 
-* install grub
+* set locales
+```
+echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen
+locale-gen
+echo 'LANG=en_US.UTF-8' > /etc/locale.conf
+```
+
+* install boot-loader
+```
+# install bootloader
+systemd-machine-id-setup
+bootctl --path=/boot install
+
+# Get UUID of the boot partition
+uuid=$(blkid | grep 'crypto_LUKS' | egrep -o ' UUID="[^"]+"')
+uuid=$(echo $uuid | awk -F '=' '{ print $2 }' | tr -d '"')
+
+# create bootloader configs
+cat <<EOF >/boot/loader/entries/arch.conf
+title   Arch Linux
+linux   /vmlinuz-linux
+initrd  /initramfs-linux.img
+options cryptdevice=UUID=${uuid}:cryptlvm root=/dev/volgrp/system
+EOF
+
+cat <<EOF >/boot/loader/loader.conf
+default arch
+timeout 0
+editor  0
+EOF
+```
+
+* create ramdisk environment (for encryption to work)
+```
+vim /etc/mkinitcpio.conf
+# change line -->
+# HOOKS=(base udev autodetect modconf block filesystems keyboard fsck encrypt lvm2)
+mkinitcpio -P
+```
+
+* install grub [alternative to bootctl]
 ```
 pacman -S grub efibootmgr os-prober
 grub-install
 grub-mkcobfig -o 
 ```
 
-* Fix linux not found
+* Fix linux not found [if install grub fails]
 ```
 mkinitcpio -p linux
 pacman -S linux
@@ -89,11 +129,6 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 #### Post installation
-* packages to install 
-```
-pacman -S usbutils fakeroot go 
-```
-
 * install xorg + gnome
 ```
 pacman -S xf86-video-amdgpu xorg xorg-init gnome
@@ -101,6 +136,7 @@ pacman -S xf86-video-amdgpu xorg xorg-init gnome
 
 * add AUR packages
 ```
+pacman -S base-devel
 git clone https://aur.archlinux.org/yay-git.git
 cd yay-git
 makepkg -si
