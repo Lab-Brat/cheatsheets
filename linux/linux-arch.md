@@ -45,6 +45,14 @@ lvcreate -l '100%FREE' volgrp -n system
 mkfs.ext4 -F /dev/volgrp/system
 ```
 
+* mount partions
+```
+mount /dev/volgrp/system /mnt
+mkdir /mnt/boot
+mount /dev/nvme0n1p1 /mnt/boot
+swapon /dev/volgrp/swap
+```
+
 #### OS Installation
 * install packages
 ```
