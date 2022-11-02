@@ -54,10 +54,9 @@ swapon /dev/volgrp/swap
 ```
 
 #### OS Installation
-* install packages
+* install the system and some packages
 ```
-vim /etc/pacman.conf
-pacstrap /mnt base base-devel linux linux-firmware sudo parted NetworkManager neovim git man-db
+pacstrap /mnt base base-devel linux linux-firmware lvm2
 ```
 
 * generate an fstab file
@@ -66,13 +65,15 @@ genfstab /mnt -U >> /mnt/etc/fstab
 # (from arch-installation-scripts)
 ```
 
-* chroot
+* chroot and change root password and install essentials
 ```
-arch-chroot
-usradd -m oxxo
+arch-chroot /mnt
 passwd 
-nvim /etc/locale-gen
-locale-gen
+pacman -S NetworkManager git vim
+```
+
+* install grub
+```
 pacman -S grub efibootmgr os-prober
 grub-install
 grub-mkcobfig -o 
