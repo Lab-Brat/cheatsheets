@@ -2,6 +2,9 @@
 This repository is a collection of cheat sheets and notes on various topics, mainly focused around scripting programming languages, Linux command line and DevOps tools.
 
 #### cheatsheets
+* `GoogleSRE` - notes on `Site Reliability Engineering` book,
+  * `ch3_risk` - Chapter 3 Embracing Risk.
+  * `ch5_toil` - Chapter 5 Elimintaing Toil.
 * ```ansible``` - Directory of cheatsheets about Ansible.
   * ```ansible-ad-hoc.md``` - Ansible ad hoc commands.
   * ```ansible-playbook.md``` - run Ansible playbook and advanced concepts.
@@ -10,6 +13,7 @@ This repository is a collection of cheat sheets and notes on various topics, mai
   * ```linux-arch.md``` - Commands used to setup Arch Linux distribution.
   * ```linux-awk.md``` - awk command to edit cli output.
   * ```linux-beeper.md``` - Play Empire Anthem on motherboard beeper.
+  * `linux-certificates.md` - Manage TLS certificates using certtool and openssl.
   * ```linux-drivers.md``` - Information on how drivers are processed in Linux.
   * ```linux-fdisk.md``` - Create and modify partitions.
   * ```linux-firewall-firewalld_ufw.md``` - RHEL specific firewalld and Debian specific ufw.
