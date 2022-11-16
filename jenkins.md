@@ -13,4 +13,17 @@
         * Host Key Verification Strategy: Manually trusted key Verification Strategy
         * Advanced: JavaPath = /bin/java
 * Save
+
+#### Agent as a Docker container
+To use Jenkins Agent as a Docker container:
+* Install `Docker Pipeline` plugin
+* Allow jenkins user to run Docker commands: `usermod -aG docker jenkins`
+* Run `Jenkinsfile-docker-node` pipeline from the `jenkins-infra` repository.
+    * `Dashboard` -> `New Item` -> `Pipeline`
+    * `Pipleline` -> `Pipleline script from SCM`
+    * `SCM`: Git
+    * `URL`: https://github.com/Lab-Brat/jenkins-infra.git
+    * `Credentials` -> anything, repo is available with https
+    * `Branch`: Master
+    * `Script Path`: jenkins-infra/jenkinsfiles/
 <br>
