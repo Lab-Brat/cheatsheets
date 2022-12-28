@@ -1,13 +1,13 @@
 ### firewalld
-Firewall configuration using ```firewall-cmd``` in Fedora/AlmaLinux/RedHat type Linux distributions.
+Firewall configuration using `firewall-cmd` in Fedora/AlmaLinux/RedHat type Linux distributions.
 
 #### Ports
-* List ports ```firewall-cmd --list-ports```
-* Add port ```firewall-cmd --add-port=22/tcp --permanent```
-* Remove port ```firewall-cmd --remove-port=22/tcp --permanent```
+* List ports `firewall-cmd --list-ports`
+* Add port `firewall-cmd --add-port=22/tcp --permanent`
+* Remove port `firewall-cmd --remove-port=22/tcp --permanent`
 * Reload firewall
-  * ```firewall-cmd --reload```
-  * ```systemctl restart firewalld```
+  * `firewall-cmd --reload`
+  * `systemctl restart firewalld`
 
 #### Restrict SSH to an IP range
 ```
@@ -19,4 +19,5 @@ firewall-cmd --reload
 ```
 
 ### Useful Links
-Fedora ```firewalld``` documentation: https://docs.fedoraproject.org/en-US/quick-docs/firewalld/
+Fedora `firewalld` documentation: https://docs.fedoraproject.org/en-US/quick-docs/firewalld/
+Rich rules: https://www.computernetworkingnotes.com/linux-tutorials/firewalld-rich-rules-explained-with-examples.html
