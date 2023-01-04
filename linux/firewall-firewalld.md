@@ -1,7 +1,8 @@
 ### firewalld
-Firewall configuration using `firewall-cmd` in Fedora/AlmaLinux/RedHat type Linux distributions.
-**Note** All actions in this readme are for changing live firewalld settings, 
-if changes need to be persistent across reboot - add `--permanent` flag
+Firewall configuration using `firewall-cmd` in Fedora/AlmaLinux/RedHat type Linux distributions.  
+All actions in this cheatsheet are for changing live firewalld settings, 
+for changes to be saved after reload add `--permanent` flag
+^^^^**Note**  
 
 #### Basics
 * Check state `firewall-cmd --state`
