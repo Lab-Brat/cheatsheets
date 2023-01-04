@@ -3,13 +3,25 @@ Firewall configuration using `firewall-cmd` in Fedora/AlmaLinux/RedHat type Linu
 **Note** All actions in this readme are for changing live firewalld settings, 
 if changes need to be persistent across reboot - add `--permanent` flag
 
+#### Basics
+* Check state `firewall-cmd --state`
+* Start firewalld `systemctl enable --now firewalld`
+* Reload firewall
+  * `firewall-cmd --reload`
+  * `systemctl restart firewalld`
+* List public (default) zone `firewall-cmd --list-all`
+* List all zones `firewall-cmd --list-all-zones`
+
+
 #### Ports
 * List ports `firewall-cmd --list-ports`
 * Add port `firewall-cmd --add-port=22/tcp`
 * Remove port `firewall-cmd --remove-port=22/tcp`
-* Reload firewall
-  * `firewall-cmd --reload`
-  * `systemctl restart firewalld`
+
+#### Services
+* Add service `firewall-cnd --add-service=httpd`
+* Remove service `firewall-cmd --remove-service=https`
+
 
 #### Restrict SSH to an IP range
 * Add source
