@@ -12,10 +12,16 @@ if changes need to be persistent across reboot - add `--permanent` flag
   * `systemctl restart firewalld`
 
 #### Restrict SSH to an IP range
+* Add source
 ```
-firewall-cmd --zone=ssh-limited --add-source=192.168.56.0/24
-firewall-cmd --zone=ssh-limited --add-service=ssh
-firewall-cmd --remove-service=ssh
+firewall-cmd --zone=public --add-source=192.168.56.0/24
+firewall-cmd --zone=public --remove-service=ssh
+```
+
+* Add rich-rule
+```
+firewall-cmd --zone=public --add-rich-rule='rule family=ipv4 source address=192.168.56.0/24 service name=ssh  accept'
+firewall-cmd --zone=public --remove-service=ssh
 ```
 
 ### Useful Links
