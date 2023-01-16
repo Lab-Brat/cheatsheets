@@ -21,6 +21,18 @@ git rebase --continue
 git push -f
 ```
 
+#### Get branch
+```
+git clone ...
+git checkout branch-name
+
+# verify branch switch
+git branch 
+
+# to push to that branch
+git push origin branch-name
+```
+
 
 #### Submodules
 * initialized submodules `git submodule init`
