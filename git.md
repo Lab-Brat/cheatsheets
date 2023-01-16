@@ -10,6 +10,7 @@ git commit -m 'rebase'
 git push -f
 ```
 
+
 #### Change commit info
 ```
 git rebase -i HEAD~2
@@ -20,7 +21,12 @@ git rebase --continue
 git push -f
 ```
 
-#### 
+
+#### Submodules
+* initialized submodules `git submodule init`
+* update submodules to predefined commit `git submodule update`
+* get the latest version of submodules `git submodule update --recursive --remote`
+
 
 #### Config
 COnfiguration to work with 2 ```git``` accounts, Github and Gitlab for example. 3 configuration files will be needed - ```.gitconfig```, ```.gitconfig-lab``` and ```.gitconfig-work```.  
