@@ -4,10 +4,18 @@
 ```
 git rebase -i HEAD~1
 #change 'pick' to 'drop'
+
 #if commit was already pushed to repository, then
 git add .
 git commit -m 'rebase'
 git push -f
+```
+
+#### Undo last * commits
+```
+# to undo last 1 commit
+git reset --hard HEAD~1
+git push origin -f
 ```
 
 
