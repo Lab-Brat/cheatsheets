@@ -114,4 +114,62 @@ ls -l /usr/src/linux
 emerge --ask sys-kernel/genkernel
 echo '/dev/sda1       /boot   ext4    defaults        0 2' >> /etc/fstab
 genkernel all
+ls /boot/vmlinu* /boot/initramfs*
+```  
+
+Update fstab
+```
+/dev/sda1   /boot        vfat    defaults,noatime     0 2
+/dev/sda2   none         swap    sw                   0 0
+/dev/sda3   /            ext4    noatime              0 1
+
+/dev/cdrom  /mnt/cdrom   auto    noauto,user          0 0
+```  
+
+Set Hostname and Change Password
+```
+echo gentoo_v1 > /etc/hostname
+passwd
+```  
+
+System Tools
+```
+emerge --ask net-misc/dhcpcd
+rc-update add dhcpcd default
+rc-service dhcpcd start
+
+emerge --ask app-editors/vim
+
+emerge --ask app-admin/sysklogd
+rc-update add sysklogd default
+
+emerge --ask sys-process/cronie
+rc-update add cronie default
+crontab /etc/crontab
+
+emerge --ask sys-apps/mlocate
+rc-update add sshd default
+
+emerge --ask net-misc/chrony
+
+rc-update add chronyd default
+emerge --ask sys-fs/e2fsprogs
+```  
+
+Install Grub Bootloader
+```
+echo 'GRUB_PLATFORMS="efi-64"' >> /etc/portage/make.conf
+emerge --ask sys-boot/grub
+grub-install --target=x86_64-efi --efi-directory=/boot
+echo 'GRUB_DISABLE_OS_PROBER=false' >> /etc/default/grub
+grub-mkconfig -o /boot/grub/grub.cfg
+```  
+
+Exit
+```
+exit
+cd
+umount -l /mnt/gentoo/dev{/shm,/pts,}
+umount -R /mnt/gentoo
+reboot
 ```  
