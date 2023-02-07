@@ -102,4 +102,16 @@ nano -w /etc/locale.gen
 locale-gen
 eselect locale set 4
 env-update && source /etc/profile && export PS1="(chroot) ${PS1}"
+```  
+
+Kernel (genkernel)
 ```
+emerge --ask sys-kernel/linux-firmware
+emerge --ask sys-kernel/gentoo-sources
+eselect kernel list
+eselect kernel set 1
+ls -l /usr/src/linux
+emerge --ask sys-kernel/genkernel
+echo '/dev/sda1       /boot   ext4    defaults        0 2' >> /etc/fstab
+genkernel all
+```  
