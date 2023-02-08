@@ -5,7 +5,7 @@
 * Search for a package `emerge --search <key-word>`
 * Install package `emerge --ask <package>`
 * Delete package `emerge --deselect <package>`
-
+* Full system upgrade `emerge --update --deep @world`
 
 
 #### equery
