@@ -52,6 +52,19 @@ ss -tulpn
 ssh -p 50505 user@localhost
 ```
 
+* Tunnel local hugo server to client
+```
+  +----------+     (1) +----------+ 
+  | client_1 |-------->| server_1 |
+  +----------+         +----------+
+
+# (1) SSH connect from client_1 to server_1 and map ports to localhost
+ssh -L 1313:localhost:1313 user@hugo_server
+
+# in browser: http://127.0.0.1:1313
+# if the url about is availabe on the server, it will now be available on the client.
+```
+
 #### SSH settings
 * keep ssh session alive for 72 hours
 ```
