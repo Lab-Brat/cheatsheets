@@ -31,14 +31,25 @@ ssh-add ~/.ssh/id_rsa
 ```
 
 #### SSH tunnel
-```
-# connect from remote client to remote server
-# on local client forward ephemral port 50505 to remote server
-ssh -R 50505:localhost:22 user@10.10.10.10
-# check open ports
-ss -tl
-# tunnel back through port 50505 to local client
-ssh -i /home/user/.ssh/id_rsa -p 50505 user@localhost
+* Connect to a Linux host that has only a private IP
+```                                             
+  +-----------+     (2) +----------+ (1)  (3) +-----------+     
+  |  client_1 |-------->| server_1 |<-------->|  client_2 |     
+  +-----------+         +----------+          +-----------+    
+ 
+# client_1: client from which the SSH connection will initiate.
+# server_1: intermediate host with public IP that will facilitate the connection.
+# client_2: client to which client_1 is connecting to.
+
+# (1) SSH from client2 to the server and forward port 50505
+ssh -R 50505:localhost:22 user@server_1
+
+# (2) SSH from client2 to the server, and verify port existence
+ssh user@server_1
+ss -tulpn
+
+# (3) SSH from the server to client_2
+ssh -p 50505 user@localhost
 ```
 
 #### SSH settings
