@@ -33,9 +33,9 @@ ssh-add ~/.ssh/id_rsa
 #### SSH tunnel
 * Connect to a Linux host that has only a private IP
 ```                                             
-  +-----------+     (2) +----------+ (1)  (3) +-----------+     
-  |  client_1 |-------->| server_1 |<-------->|  client_2 |     
-  +-----------+         +----------+          +-----------+    
+  +----------+     (2) +----------+ (1)  (3) +----------+     
+  | client_1 |-------->| server_1 |<-------->| client_2 |     
+  +----------+         +----------+          +----------+    
  
 # client_1: client from which the SSH connection will initiate.
 # server_1: intermediate host with public IP that will facilitate the connection.
