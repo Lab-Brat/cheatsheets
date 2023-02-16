@@ -12,6 +12,7 @@ for changes to be saved after reload add `--permanent` flag
   * `systemctl restart firewalld`
 * List public (default) zone `firewall-cmd --list-all`
 * List all zones `firewall-cmd --list-all-zones`
+* Save all rules `firewall-cmd --runtime-to-permanent`
 
 
 #### Ports
