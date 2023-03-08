@@ -18,7 +18,6 @@ git reset --hard HEAD~1
 git push origin -f
 ```
 
-
 #### Change commit info
 ```
 git rebase -i HEAD~2
@@ -29,7 +28,7 @@ git rebase --continue
 git push -f
 ```
 
-#### Get branch
+#### Switch branch
 ```
 git clone ...
 git checkout branch-name
@@ -40,6 +39,11 @@ git branch
 # to push to that branch
 git push origin branch-name
 ```
+
+#### Pull latest commits from main branch
+git checkout dev
+git fetch origin
+git merge origin/main
 
 #### Merge changes from dev to main branch
 git checkout main
