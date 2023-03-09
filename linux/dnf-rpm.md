@@ -50,7 +50,6 @@ print(json.dumps(db.conf.substitutions, indent=2))
 ```
 * list all available options for config `dnf config-manager --dump`
 
-
 ### rpm
 * install `rpm -i <package>`
 * remove `rpm -e <package>` 
@@ -58,3 +57,17 @@ print(json.dumps(db.conf.substitutions, indent=2))
 * list all `rpm -qa`
 * info local `rpm -qip`
 * info general `rpm -qf`
+
+#### common issues
+* Error: rpmdb open failed
+```bash
+# create backups folder
+mkdir ~/rpm_backups/
+cp -avr /var/lib/rpm/ ~/rpm_backups
+
+# clear rpm db
+rm -f /var/lib/rpm/__db*
+db_verify /var/lib/rpm/Packages
+rpm --rebuilddb
+yum clean all
+```
