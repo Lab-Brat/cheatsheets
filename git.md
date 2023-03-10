@@ -41,19 +41,24 @@ git push origin branch-name
 ```
 
 #### Pull latest commits from main branch
+```
 git checkout dev
 git fetch origin
 git merge origin/main
+```
 
 #### Merge changes from dev to main branch
+```
 git checkout main
 git merge dev
 git push
+```
 
 #### Create and publish tag
+```
 git tag -a v0.1.1
 git push origin v0.1.1
-
+```
 
 #### Submodules
 * initialized submodules `git submodule init`
