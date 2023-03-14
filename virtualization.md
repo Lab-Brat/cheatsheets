@@ -55,7 +55,7 @@ vboxmanage dhcpserver findlease --network NatNetwork --mac-address=08002783E8BB
 
 * enlarge disk
 First, go to `Files` -> `Tools` -> `Virtual Media Manager` 
-and change the virtual size of the disk. Then:
+and change the virtual size of the disk. Detatch the disk, and:
 ```
 vboxmanage showmediuminfo <disk_name>.vdi
 vboxmanage modifyhd <UUID> --resize <Capacity>
