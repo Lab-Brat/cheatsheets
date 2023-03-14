@@ -53,6 +53,14 @@ vboxmanage showvminfo --details 46ec9075-f49b-4d16-9867-d56710b6a3da | fgrep MAC
 vboxmanage dhcpserver findlease --network NatNetwork --mac-address=08002783E8BB
 ```
 
+* enlarge disk
+First, go to `Files` -> `Tools` -> `Virtual Media Manager` 
+and change the virtual size of the disk. Then:
+```
+vboxmanage showmediuminfo <disk_name>.vdi
+vboxmanage modifyhd <UUID> --resize <Capacity>
+```
+
 
 #### KVM+libvirt+qemu
 * basic commands 
