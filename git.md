@@ -22,8 +22,9 @@ git push origin -f
 ```
 git rebase -i HEAD~2
 #change 'pick' to 'edit'
+
 #change commit author
-git commit --amend --author "LabBrat <xoovoox@protonmail.com>" --no-edit
+git commit --amend --author "LabBrat <user@email.com>" --no-edit
 git rebase --continue
 git push -f
 ```
@@ -40,27 +41,25 @@ git branch
 git push origin branch-name
 ```
 
-#### Pull latest commits from main branch
+#### Working with dev/main branch
 ```
+# switch to dev and fetch newest changes
 git checkout dev
 git fetch origin
 git merge origin/main
-```
 
-#### Merge changes from dev to main branch
-```
+# switch to main branch and merge changes from dev
 git checkout main
 git merge dev
 git push
 ```
 
 #### Create and publish tag
-```
-git tag -a v0.1.1
-git push origin v0.1.1
-```
+* `git tag -a v0.1.1` -> create a tag
+* `git push origin v0.1.1` -> push a tag to repository
+
 
 #### Submodules
-* initialized submodules `git submodule init`
-* update submodules to predefined commit `git submodule update`
-* get the latest version of submodules `git submodule update --recursive --remote`
+* `git submodule init` -> initialized submodules
+* `git submodule update` -> update submodules to predefined commit
+* `git submodule update --recursive --remote` -> get the latest version of submodules
