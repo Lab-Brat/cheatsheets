@@ -54,3 +54,7 @@ server {
     ssl_certificate_key /etc/nginx/ssl/assets-private.key;
 } 
 ```
+
+#### NGINXConfig Tool
+DigitalOcean has an interactive [tool](https://www.digitalocean.com/community/tools/nginx) 
+to create Nginx configuration file.
