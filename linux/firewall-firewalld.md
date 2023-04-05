@@ -1,28 +1,27 @@
 ### firewalld
-Firewall configuration using `firewall-cmd` in Fedora/AlmaLinux/RedHat type Linux distributions.  
+**Note**  
 All actions in this cheatsheet are for changing live firewalld settings, 
 for changes to be saved after reload add `--permanent` flag
-^^^^**Note**  
 
 #### Basics
-* Check state `firewall-cmd --state`
-* Start firewalld `systemctl enable --now firewalld`
-* Reload firewall
-  * `firewall-cmd --reload`
-  * `systemctl restart firewalld`
-* List public (default) zone `firewall-cmd --list-all`
-* List all zones `firewall-cmd --list-all-zones`
-* Save all rules `firewall-cmd --runtime-to-permanent`
+* `firewall-cmd --state` -> Check state 
+* `systemctl enable --now firewalld` -> Start firewalld 
+* `firewall-cmd --reload` -> Reload firewall
+* `systemctl restart firewalld` -> Restart firewall service
+* `firewall-cmd --list-all` -> ist default zone rules
+* `firewall-cmd --list-all-zones` -> List all zones 
+* `firewall-cmd --runtime-to-permanent` -> Save all rules 
 
 
 #### Ports
-* List ports `firewall-cmd --list-ports`
-* Add port `firewall-cmd --add-port=22/tcp`
-* Remove port `firewall-cmd --remove-port=22/tcp`
+* `firewall-cmd --list-ports` -> List ports 
+* `firewall-cmd --add-port=22/tcp` -> Add port 
+* `firewall-cmd --remove-port=22/tcp` -> Remove port 
+
 
 #### Services
-* Add service `firewall-cnd --add-service=httpd`
-* Remove service `firewall-cmd --remove-service=https`
+* `firewall-cnd --add-service=http` -> Add http service 
+* `firewall-cmd --remove-service=http` -> Remove service 
 
 
 #### Restrict SSH to an IP range
@@ -39,5 +38,6 @@ firewall-cmd --zone=public --remove-service=ssh
 ```
 
 ### Useful Links
-Fedora `firewalld` documentation: https://docs.fedoraproject.org/en-US/quick-docs/firewalld/
-Rich rules: https://www.computernetworkingnotes.com/linux-tutorials/firewalld-rich-rules-explained-with-examples.html
+* [[Link]](https://docs.fedoraproject.org/en-US/quick-docs/firewalld/) Fedora `firewalld` documentation
+* [[Link]](https://www.computernetworkingnotes.com/linux-tutorials/firewalld-rich-rules-explained-with-examples.html
+) Rich rules
