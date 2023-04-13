@@ -70,3 +70,4 @@ git push
 * `git submodule init` -> initialized submodules
 * `git submodule update` -> update submodules to predefined commit
 * `git submodule update --recursive --remote` -> get the latest version of submodules
+* `git submodule foreach git pull` -> pull latest changes in every submodule
