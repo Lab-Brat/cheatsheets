@@ -29,6 +29,13 @@ git rebase --continue
 git push -f
 ```
 
+#### Stash changes
+```
+git stash
+# do something, like git pull
+git stash pop
+```
+
 #### Switch branch
 ```
 git clone ...
