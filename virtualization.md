@@ -35,73 +35,21 @@ sudo vboxreload
 
 
 #### VboxManage
-* list vms
-```
-vboxmanage list vms
-vboxmanage list runningvms
-```
-
-* turn on and off
-```
-vboxmanage start <VM name>
-vboxmanage controlvm <VM name> poweroff
-```
-
-* extra
-```
-vboxmanage showvminfo --details 46ec9075-f49b-4d16-9867-d56710b6a3da | fgrep MAC
-vboxmanage dhcpserver findlease --network NatNetwork --mac-address=08002783E8BB
-```
-
+* `vboxmanage list vms` -> list vms
+* `vboxmanage list runningvms` -> list running vms
+* `vboxmanage start <VM name>` -> turn on VM
+* `vboxmanage controlvm <VM name> poweroff` -> turn off VM
+* `vboxmanage controlvm <VM name> reset` -> reset VM
+* `vboxmanage showvminfo --details <VM ID> | fgrep MAC` -> get mac address
+* `vboxmanage dhcpserver findlease --network NatNetwork --mac-address=08002783E8BB` -> get ip address
 * enlarge disk  
 First, go to `Files` -> `Tools` -> `Virtual Media Manager` 
 and change the virtual size of the disk. Detatch the disk, and:
-```
+```bash
 vboxmanage showmediuminfo <disk_name>.vdi
 vboxmanage modifyhd <UUID> --resize <Capacity>
 ```
 
-
-#### KVM+libvirt+qemu
-* basic commands 
-```
-virsh start <VM name>
-virsh list
-
-virsh shutdown <VM name>
-virsh destroy 
-virsh undefine 
-```
-
-* configure network 
-```
-virsh net-dumpxml default > default.xml
-#change: name, uuid, bridge name, mac, ip, ip range, and rename file nat2.xml
-virsh net-define nat2.xml
-virsh net-start nat2.xml
-virsh net-autostart nat2.xml
-virt net-list
-```
-
-#### Ovirt
-##### installing ovirt-engine-sdk-python
-* use python version 3.9, update pip
-* install prerequisites:
-    * pip: ```python -m pip install pycurl```
-    * Debian: ``` sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev libxslt1-dev```
-    * RHEL: ```sudo dnf install libcurl-devel libxslt-devel libxml-devel libxml2-devel```
-* install sdk: ```python -m pip install ovirt-engine-sdk-python```
-
-* pycurl ImportError fix
-    * ```python -m pip uninstall pycurl```
-    * add following to /etc/bashrc
-    ```
-    export PYCURL_SSL_LIBRARY=openssl
-    export PYCURL_SSL_LIBRARY=nss
-    export CPPFLAGS=-I/usr/local/opt/openssl/include
-    export LDFLAGS=-L/usr/local/opt/openssl/lib
-    ```
-    * exit session, reinstall pycurl
 
 ### Useful links
 * Troubleshooting  
