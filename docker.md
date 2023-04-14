@@ -1,27 +1,27 @@
 ### Docker
 #### Container operations
-* list currently running containers ```docker ps```
-* list all containers ```docker ps -a```
-* starting container ```docker start <id>```
-* stopping container ```docker stop <id>```
-* removing container ```docker rm <id>```
-* remove all stopped containers ```docker container prune```
-* run container from image with terminal ```docker run -d -it <image-name>```
-* bind port ```docker run -d -p 6000:6379 <id>```
-* set name ```docker run -d --name special-name```
-* login with console ```docker exec -it 993ccbbb0689 /bin/bash```
-* check logs ```docker logs <id>```
+* `docker ps` -> list currently running containers
+* `docker ps -a` -> list all containers 
+* `docker start <id>` -> starting container 
+* `docker stop <id>` -> stopping container 
+* `docker rm <id>` -> removing container 
+* `docker container prune` -> remove all stopped containers 
+* `docker run -d -it <image-name>` -> run container from image with terminal 
+* `docker run -d -p 6000:6379 <id>` -> bind port
+* `docker run -d --name special-name` -> set name 
+* `docker exec -it 993ccbbb0689 /bin/bash` -> login with console 
+* `docker logs <id>` -> check logs 
 
 #### Images
-* list all images ```docker images```
-* delete an image ```docker rmi <image-id>```
-* download Fedora image ```docker pull fedora```
+* `docker images` -> list all images 
+* `docker rmi <image-id>` -> delete an image 
+* `docker pull fedora` -> download Fedora image 
 
 #### Registry
-* list available images from local registry ```curl -X GET http://localhost:5000/v2/_catalog```
+* `curl -X GET http://localhost:5000/v2/_catalog` -> list available images from local registry 
 
 #### Dockerfile
-* build image from a Dockerfile in current directory ```docker build -t <image-name> .```
+* `docker build -t <image-name> .` -> build image from a Dockerfile in current directory 
 * Dockerfile example
 ```dockerfile
 FROM fedora:latest
