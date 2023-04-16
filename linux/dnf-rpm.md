@@ -1,34 +1,34 @@
 ### dnf
 #### basic commands
-* install `dnf install <package>`
-* remove `dnf remove <package>`
-* update `dnf update`
+* `dnf install <package>` -> install package
+* `dnf remove <package>` -> remove package
+* `dnf update` -> update all packages
 
 #### update
-* check available updates `dnf check-update`
-* install only security updates `dnf update --security`
-
+* `dnf check-update` -> check available updates 
+* `dnf update --security` -> install only security updates 
+* 
 #### searching
-* info local `dnf info <package>`
-* list all `dnf list installed`
-  * example `dnf list installed vim*`
-* info general `dnf provides <package>`
+* `dnf info <package>` -> info about package
+* `dnf list installed` -> list installed packages
+  * example: `dnf list installed vim*`
+* `dnf provides <package>` -> info general about package
   * example: `dnf provides "*/nginx.conf"`
-* search for keywords `dnf search <keyword>`
-  * example `dnf search text editor>`
+* `dnf search <keyword>` -> search for keywords in package names
+  * example: `dnf search text editor>`
  
 
 ### repositories
 #### basic commands
-* view enabled repos `dnf repolist --enabled`
-* view detailed info `dnf repolist -v epel`
-* view all repos `dnf repolist --all`
-* add repo `dnf config-manager --add-repo ...`
-* enable repo `dnf config-manager --set-enabled ...`
-* disable repo `dnf config-manager --set-disabled ...`
+* `dnf repolist --enabled` -> view enabled repos 
+* `dnf repolist -v epel` -> view detailed info 
+* `dnf repolist --all` -> view all repos 
+* `dnf config-manager --add-repo ...` -> add repo 
+* `dnf config-manager --set-enabled ...` -> enable repo 
+* `dnf config-manager --set-disabled ...` -> disable repo
 
 #### add repository manually
-* create config `vim /etc/yum.repos.d/epel.repo`
+* `vim /etc/yum.repos.d/epel.repo` -> create repository file
 * append the following content
 ```ini
 [epel]
@@ -51,12 +51,12 @@ print(json.dumps(db.conf.substitutions, indent=2))
 * list all available options for config `dnf config-manager --dump`
 
 ### rpm
-* install `rpm -i <package>`
-* remove `rpm -e <package>` 
-* update `rmp -U <package>` 
-* list all `rpm -qa`
-* info local `rpm -qip`
-* info general `rpm -qf`
+* `rpm -i <package>` -> install
+* `rpm -e <package>`  -> remove
+* `rmp -U <package>`  -> update
+* `rpm -qa` -> list all
+* `rpm -qip` -> info local package
+* `rpm -qf` -> info general 
 
 #### common issues
 * Error: rpmdb open failed
