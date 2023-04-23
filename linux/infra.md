@@ -8,4 +8,4 @@
 
 
 #### Useful Links
-* [(ldapsearch examples)[https://devconnected.com/how-to-search-ldap-using-ldapsearch-examples/]] - ldapsearch examples
+* [[Link](https://devconnected.com/how-to-search-ldap-using-ldapsearch-examples/)] - ldapsearch examples
