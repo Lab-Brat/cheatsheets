@@ -1,6 +1,6 @@
 #### User Management
-* Create a user `useradd <name>`
-* Add user to a group `usermod -aG <group> <name>`
+* `useradd <name>` -> Create a user
+* `usermod -aG <group> <name>` -> Add user to a group
 
 #### User root access
 visudo
