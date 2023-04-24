@@ -1,19 +1,13 @@
 ### SSH
 #### public-key authentication
-* create key
-```
-ssh-keygen -f /path/to/key -P "" -q
-```
+* `ssh-keygen -f /path/to/key -P "" -q` -> create key
 * copy key
 ```
 ssh-copy-id -i /path/to/key user@10.10.10.10
 # copy without entering password
 # sshpass -p 'password' ssh-copy-id -o StrictHostKeyChecking=no -i /path/to/key root@10.10.10.10
 ```
-* connect with a specified key
-```
-ssh -i /path/to/private/key user@10.10.10.10
-```
+* `ssh -i /path/to/private/key user@10.10.10.10` -> connect with a specified key
 * use keys automatically
 ```
 vim ~/.ssh/config
