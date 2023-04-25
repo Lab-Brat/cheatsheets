@@ -1,14 +1,14 @@
-## Portage
+### Portage
 
 #### Basics
-* Sync package database `emerge --sync`
-* Search for a package `emerge --search <key-word>`
-* Install package `emerge --ask <package>`
-* Delete package `emerge --deselect <package>`
-* Full system upgrade `emerge --update --deep @world`
+* `emerge --sync` -> Sync package database 
+* `emerge --search <key-word>` -> Search for a package 
+* `emerge --ask <package>` -> Install package 
+* `emerge --deselect <package>` -> Delete package 
+* `emerge --update --deep @world` -> Full system upgrade 
 
 
 #### equery
-* Install equery `emerge --ask  app-portage/gentoolkit`
-* Find all files of a package `equery files <package>`
-* Find all docs of a package `equery files --filter=doc <package>`
+* `emerge --ask  app-portage/gentoolkit` -> Install equery
+* `equery files <package>` -> Find all files of a package 
+* `equery files --filter=doc <package>` -> Find all docs of a package
