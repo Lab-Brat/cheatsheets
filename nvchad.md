@@ -25,6 +25,12 @@
   * `space -- h` -> horizontal terminal
 
 
+#### Github Copilot
+* `Alt -- l` -> accept suggestion
+* `Alt -- [/]` -> previous/next suggestion
+* `Ctrl -- ]` -> dismiss suggestion
+
+
 #### Configuration
 * `~/.config/nvim/lua/custom/` -> main configuration directory
   * `chardrc.lua` -> chad specific configurations
