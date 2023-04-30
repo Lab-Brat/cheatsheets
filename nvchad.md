@@ -1,14 +1,7 @@
 ### NvChad
 
-#### Basic Key Bindings
+#### NvChad Key Bindings
 * `space -- t -- h` -> turn on built-in theme switcher
-* `: -- TSInstall python` -> install treesitter syntax highliting for Python
-* `: -- TSInstallInfo` -> check all installed themes
-* `Ctrl -- n` -> toggle file viewer
-  * `m` -> mark file
-  * `d` -> delete file
-  * `r` -> rename file
-  * `c/p` -> copy/pase file
 * `space -- f -- f` -> search all files in the project
 * `space -- f -- b` -> search files in the buffer
 * `space -- c -- h` -> open cheat sheats
@@ -23,6 +16,28 @@
 * terminal
   * `space -- v` -> vertical terminal
   * `space -- h` -> horizontal terminal
+
+
+#### LunarVim Key Bindings
+* `space -- e` -> file viewer
+* `Ctrl -- \` -> terminal
+* `Shift -- k` -> show object information
+* `g -- l` -> show line error diagnostics
+
+
+#### Nvim Advanced Features
+* TreeSitter
+  * `: -- TSInstall python` -> install treesitter syntax highliting for Python
+  * `: -- TSInstallInfo` -> check all installed themes
+* File viewer
+  * `m` -> mark file
+  * `d` -> delete file
+  * `r` -> rename file
+  * `c/p` -> copy/pase file
+* LSP
+  * `: -- LspSettings pyright` -> open (or create) pyright settings
+* Trouble plugin
+  * `: -- TroubleToggle` -> show all errors
 
 
 #### Github Copilot
