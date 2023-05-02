@@ -110,3 +110,16 @@ done
     var1=$[ $var1 - 25 ]
  done
 ```
+
+* example: looping through csv file contents
+```bash
+#!/bin/bash
+
+while IFS=',' read -r owner provider ip port
+do
+    echo "Owner: $owner"
+    echo "Provider: $provider"
+    echo "IP Address: $ip"
+done < ips.csv
+```
+
