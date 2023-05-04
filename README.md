@@ -28,8 +28,14 @@ This repository is a collection of cheat sheets and notes on various topics, mai
   * `linux-sed.md` - `sed` command to edit cli output.
   * `linux-ssh.md` - Commands to setup `ssh` authentication between servers and it's configuration.
   * `linux-users-acess.md` - Manage users, groups and their access.
-* `css.md` - Really basic CSS stuff.
+* `css-basics.md` - Really basic CSS stuff.
 * `docker.md` - Commands to administrate docker containers.
+* `git.md` - Basic Git commands.
+* `git_config.md` - Local git configuration.
+* `gitlab.md` - Gitlab config.
+* `jenkins.md` - Jenkins configuration.
+* `nginx.md` - Nginx configuration.
+* `nvim.md` - Neovim configuration, including NvChad and LunarVim.
 * `vagrant.md` - Setup Vagrant box and run it.
 * `vim.md` - `vim` command key bindings.
 * `virtualization.md` - Automate different virtualization platforms.
