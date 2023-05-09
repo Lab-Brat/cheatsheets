@@ -2,13 +2,13 @@
 This repository is a collection of cheat sheets and notes on various topics, mainly focused around scripting programming languages, Linux command line and DevOps tools.
 
 #### cheatsheets
-* `GoogleSRE` - notes on `Site Reliability Engineering` book,
-  * `ch3_risk` - Chapter 3 Embracing Risk.
-  * `ch5_toil` - Chapter 5 Elimintaing Toil.
 * `ansible` - Directory of cheatsheets about Ansible.
   * `ansible-ad-hoc.md` - Ansible ad hoc commands.
   * `ansible-playbook.md` - run Ansible playbook and advanced concepts.
   * `ansible.md` - Ansible cli options and ad hoc commands.
+* `GoogleSRE` - notes on `Site Reliability Engineering` book,
+  * `ch3_risk` - Chapter 3 Embracing Risk.
+  * `ch5_toil` - Chapter 5 Elimintaing Toil.
 * `linux` - Directory of cheatsheets on various Linux topics.
   * `Gentoo`
     * `gentoo-install.md` - Gentoo installation walkthrough.
