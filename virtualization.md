@@ -52,7 +52,6 @@ vboxmanage modifyhd <UUID> --resize <Capacity>
 
 
 ### Useful links
-* Troubleshooting  
-https://rhv.bradmin.org/ovirt-engine/docs/Installing_Red_Hat_Virtualization_as_a_self-hosted_engine_using_the_command_line/Troubleshooting_SHE_SHE_cli_deploy.html
-* vdsm-client  
-https://www.ovirt.org/develop/developer-guide/vdsm/vdsm-client.html
+* [[Link]](https://rhv.bradmin.org/ovirt-engine/docs/Installing_Red_Hat_Virtualization_as_a_self-hosted_engine_using_the_command_line/Troubleshooting_SHE_SHE_cli_deploy.html) - Troubleshooting
+* [[Link]](https://download.virtualbox.org/virtualbox/) - VDSM client 
+* [[Link]](https://download.virtualbox.org/virtualbox/) - VirtualBox Downloads page
