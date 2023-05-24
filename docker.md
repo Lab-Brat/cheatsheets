@@ -17,6 +17,12 @@
 * `docker rmi <image-id>` -> delete an image 
 * `docker pull fedora` -> download Fedora image 
 
+#### Volumes
+* `docker volume list` -> list all volumes
+* `docker volume ls -qf dangling=true` -> list unused volumes
+* `docker volume rm <vid>` -> delete volume
+* `docker volume rm $(docker volume ls -qf dangling=true)` -> delete unused volumes
+
 #### Registry
 * `curl -X GET http://localhost:5000/v2/_catalog` -> list available images from local registry 
 
