@@ -15,4 +15,3 @@
 * `equery files <package>` -> Find all files of a package 
 * `equery files --filter=doc <package>` -> Find all docs of a package
 * `equery keywords <package>` -> List available version of a package in the repository
-* 
