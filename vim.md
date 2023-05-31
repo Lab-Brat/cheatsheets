@@ -13,8 +13,18 @@
 CTRL+v
 select lines
 Shift + I
-press 'space'
-Press Esc.
+<space>
+Esc
+```
+
+* add " to the end of multiple lines
+```
+CTRL+v
+select lines
+$
+Shift + A
+"
+Esc
 ```
 
 * indent multiple lines
