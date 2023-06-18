@@ -29,3 +29,8 @@ Basic commands
 Configuration
 * `/etc/rsyslog.conf` -> main configuration file
 * `/etc/rsyslog.d/` -> additional configuration files
+
+### Misc
+Useful commands
+* `echo "$(tail -n 1000 file.log)" > file.log` -> keep last 1000 lines of the log file
+
