@@ -61,9 +61,11 @@ git merge dev
 git push
 ```
 
-#### Create and publish tag
+#### Tags
 * `git tag -a v0.1.1` -> create a tag
 * `git push origin v0.1.1` -> push a tag to repository
+* `git tag -f 0.1.5 <commit-hash>` -> update a tag to point to another commit
+* `git push -f origin v0.1.1` -> overwrite a tag in the repository
 
 
 #### Submodules
