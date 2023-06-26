@@ -23,6 +23,9 @@
 * `sed 's/1003/XXXXX/2' sedd.txt` -> substituting second match in a line 
 * `echo /path/to/file | sed 's_path/to_PATH/TO_'` -> substituting with _ delimiter
 
+#### list of useful sed statements
+* `sed -i 's/[[:space:]]*$//' $(find yaml_files/ -type f -name "*.yaml")` -> remove trailing in yaml files
+
 #### examples
 ```bash
 labbrat@pop-os:~$ cat test_sed.txt 
