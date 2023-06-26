@@ -25,20 +25,7 @@
 
 #### list of useful sed statements
 * `sed -i 's/[[:space:]]*$//' $(find yaml_files/ -type f -name "*.yaml")` -> remove trailing in yaml files
-
-#### examples
-```bash
-labbrat@pop-os:~$ cat test_sed.txt 
-http://www.example.com/index.html
-labbrat@pop-os:~$ 
-labbrat@pop-os:~$ sed -i 's/com/org/' test_sed.txt
-labbrat@pop-os:~$ cat test_sed.txt 
-http://www.example.org/index.html
-labbrat@pop-os:~$
-labbrat@pop-os:~$ sed 's/^.*org//' test_sed.txt
-/index.html
-labbrat@pop-os:~$
-labbrat@pop-os:~$ sed 's/^.*com/{&}/' test_sed.txt
-{http://www.example.com}/index.html
-labbrat@pop-os:~$
-```
+* Working with URL, example - `http://www.example.com/index.html`:
+  * `sed -i 's/com/org/' <url>` -> change .com -> .org
+  * `sed 's/^.*org//' <url>` -> keep filename, i.e `/index.html`
+  * `sed 's/^.*com/{&}/' <url>` -> surround the url with braces, i.e `{http://www.example.com}/index.html`
