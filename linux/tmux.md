@@ -28,4 +28,6 @@ but can be changed to anything else (`Ctrl + Space` in my case).
   * `prefix -- x` -> close pane
 * misc
   * `prefix -- I` -> install tmux plugins
+  * `Ctrl + [ + Space -> Shift + v -> y` -> select lines to copy in vi binding mode
+  * `Ctrl + [ + Space -> Ctrl + v -> Space -> y` -> select block to copy in vi binding mode
 
