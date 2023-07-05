@@ -10,5 +10,3 @@
 
 #### A list of useful grep statements
 * `grep -Po '(?<=")[0-9][0-9./]*\.\d+\.\d+\.\d+(?:/\d+)?(?=")'` -> grep quoted IP address, like in firewalld rules
-* `sed -i '819,820d' config.yaml` -> remove lines 819 and 820 in config.yaml
-* `sed '2 i NEW LINE' config.yaml` -> Insert 'NEW LINE' to line 2 in config.yaml
