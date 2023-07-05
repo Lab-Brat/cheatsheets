@@ -13,9 +13,10 @@
   * `<num>~<num>p` -> print every other lines
 * `s/old_word/new_word/` -> substitution structure
 
-#### adding line
-* `sed '$1i this is line 1' sedd.txt` -> add 1st line
-* `sed '$a this is the last line' sedd.txt` -> add last line
+#### adding and removing lines
+* `sed '1 i this is line 1' sedd.txt` -> add 1st line
+* `sed 'a this is the last line' sedd.txt` -> add last line
+* `sed '819,820d' config.yaml` -> remove lines 819 and 820 in config.yaml
 
 #### substituting words
 * `sed 's/1003/XXXXX/' sedd.txt` ->substituting first match in a line  
