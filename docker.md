@@ -26,6 +26,9 @@
 #### Registry
 * `curl -X GET http://localhost:5000/v2/_catalog` -> list available images from local registry 
 
+#### Inspect
+* `docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_name>` -> get IP address of the container 
+
 #### Dockerfile
 * `docker build -t <image-name> .` -> build image from a Dockerfile in current directory 
 * Dockerfile example
