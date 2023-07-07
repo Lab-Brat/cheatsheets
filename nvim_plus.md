@@ -29,6 +29,9 @@
 * TreeSitter
   * `: -- TSInstall python` -> install treesitter syntax highliting for Python
   * `: -- TSInstallInfo` -> check all installed themes
+* Telescope
+  * `<finder> + Ctrl v` -> open file in vertical split from Telescope finder
+  * `<finder> + Ctrl x` -> open file in horizontal split from Telescope finder
 * File viewer
   * `m` -> mark file
   * `d` -> delete file
@@ -50,4 +53,3 @@
 * `~/.config/nvim/lua/custom/` -> main configuration directory
   * `chardrc.lua` -> chad specific configurations
   * `init.lua` -> neovim configurations
-
