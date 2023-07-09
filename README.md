@@ -22,6 +22,7 @@ This repository is a collection of cheat sheets and notes on various topics, mai
   * `combined_file_processing.md` - Combined usage of awk, sed and grep.
   * `curl-wget.md` - Download files and read html page with curl and wget.
   * `diagnostics.md` - Disk usage and other system diagnostics.
+  * `diagnostics-scripts.md` - Helpful scripts for Linus syst diagnostics.
   * `dnf-rpm.md` - DNF and YUM package manager commands.
   * `drivers.md` - Information on how drivers are processed in Linux.
   * `fdisk.md` - Create and modify partitions.
