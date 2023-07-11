@@ -24,6 +24,7 @@ This repository is a collection of cheat sheets and notes on various topics, mai
   * `ansible.md` - Ansible cli options and ad hoc commands.
 * `Gentoo`
   * `gentoo-install.md` - Gentoo installation walkthrough.
+  * `gentoo-git.md` - Setting up Portage to sync packages with Git.
   * `Portage.md` - Gentoo package manager commands.
 * `linux` - Directory of cheatsheets on various Linux topics.
   * `Arch.md` - Commands used to setup Arch Linux distribution.
