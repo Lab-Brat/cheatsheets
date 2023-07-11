@@ -2,9 +2,9 @@
 This repository is a collection of cheat sheets and notes on various topics, mainly focused around scripting programming languages, Linux command line and DevOps tools.
 
 #### cheatsheets
-* `GoogleSRE` - notes on `Site Reliability Engineering` book,
-  * `ch3_risk` - Chapter 3 Embracing Risk.
-  * `ch5_toil` - Chapter 5 Elimintaing Toil.
+* `GoogleSRE` - notes on Site Reliability Engineering book,
+  * `ch3_risk.md` - Chapter 3 Embracing Risk.
+  * `ch5_toil.md` - Chapter 5 Eliminating Toil.
 * `ansible` - Directory of cheatsheets about Ansible.
   * `ansible-ad-hoc.md` - Ansible ad hoc commands.
   * `ansible-playbook.md` - run Ansible playbook and advanced concepts.
@@ -18,7 +18,7 @@ This repository is a collection of cheat sheets and notes on various topics, mai
   * `bash-conditions.md` - test statements in Bash 
   * `bash-control-flow.md` - conditionals in Bash - if, for, while etc.
   * `beeper.md` - Play Empire Anthem on motherboard beeper.
-  * `certificates.md` - Manage TLS certificates using `certtool` and `openssl`.
+  * `certificates.md` - Manage TLS certificates using certtool and openssl.
   * `combined_file_processing.md` - Combined usage of awk, sed and grep.
   * `curl-wget.md` - Download files and read html page with curl and wget.
   * `diagnostics.md` - Disk usage and other system diagnostics.
@@ -31,12 +31,12 @@ This repository is a collection of cheat sheets and notes on various topics, mai
   * `firewall-iptables.md` - Firewall configuration with iptables.
   * `grep.md` - search and filter text with grep.
   * `grub.md` - Boot process and `grub` configuration.
-  * `infra.md` - Infrastructure administrations tools, like `ldapsearch`, `dig` etc.
+  * `infra.md` - Infrastructure administrations tools, like ldapsearch, dig etc.
   * `kernel.md` - Modify and install custom Linux kernel.
-  * `logs.md` - Manage logs and configuration of a centralizied log server.
+  * `logs.md` - Manage logs and configuration of a centralized log server.
   * `network.md` - Basic network managing, such as configuration of network interfaces and ports.
   * `process.md` - Find information about running processes and top utility.
-  * `random.md` - Some random Linux commands, i.e copy cli output to clipboard, check GUI session etc.
+  * `random.md` - Some random Linux commands, i.e copy CLI output to clipboard, check GUI session etc.
   * `sed.md` - `sed` command to edit cli output.
   * `ssh.md` - Commands to setup `ssh` authentication between servers and it's configuration.
   * `tmux.md` - Tmux basic commands.
@@ -45,12 +45,12 @@ This repository is a collection of cheat sheets and notes on various topics, mai
 * `docker.md` - Commands to administrate docker containers.
 * `git.md` - Basic Git commands.
 * `git_config.md` - Local git configuration.
-* `gitlab.md` - Gitlab config.
+* `gitlab.md` - GitLab configuration.
 * `jenkins.md` - Jenkins configuration.
 * `nginx.md` - Nginx configuration.
 * `nvim.md` - Neovim keys.
 * `nvim_plus.md` - NvChad and LunarVim keys.
-* `pypi` - Some tips and memos on using PyPI.
+* `pypi.md` - Some tips and memos on using PyPI.
 * `vagrant.md` - Setup Vagrant box and run it.
-* `vim.md` - `vim` command key bindings.
+* `vim.md` - vim command key bindings.
 * `virtualization.md` - Automate different virtualization platforms.
