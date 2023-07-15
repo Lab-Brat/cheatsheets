@@ -1,5 +1,6 @@
 import os
 import re
+import subprocess
 
 
 def get_files_and_dirs(root_path):
@@ -65,11 +66,27 @@ def print_missing_entries(missing_entries):
         print()
 
 
+def find_emtpy_files(structure):
+    """Find files that have 0 line"""
+    for dir in structure:
+        if dir == ".":
+            path = "./cheatsheets/"
+        else:
+            path = f"./cheatsheets/{dir}"
+
+        for file in structure[dir]:
+            file_len = subprocess.check_output(f"wc -l {path}/{file}", shell=True)
+            file_len = int(file_len.decode("utf-8").split(" ")[0])
+            if file_len <= 1:
+                print(f"{file} has length {file_len}")
+
+
 if __name__ == "__main__":
     root_dir = "./cheatsheets"
     structure = get_files_and_dirs(root_dir)
-    readme_structure = get_entries_from_readme(os.path.join("./", "README.md"))
-
-    missing_entries = find_missing_entries(structure, readme_structure)
-
-    print_missing_entries(missing_entries)
+    find_emtpy_files(structure)
+    # readme_structure = get_entries_from_readme(os.path.join("./", "README.md"))
+    #
+    # missing_entries = find_missing_entries(structure, readme_structure)
+    #
+    # print_missing_entries(missing_entries)
