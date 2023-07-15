@@ -49,6 +49,7 @@ This repository is a collection of cheat sheets and notes on various topics, mai
   * `kernel.md` - Modify and install custom Linux kernel.
   * `logs.md` - Manage logs and configuration of a centralized log server.
   * `network.md` - Basic network managing, such as configuration of network interfaces and ports.
+  * `network-diagnostics.md` - Network diagnostics using mtp, traceroute and tracepath.
   * `process.md` - Find information about running processes and top utility.
   * `random.md` - Some random Linux commands, i.e copy CLI output to clipboard, check GUI session etc.
   * `sed.md` - sed command to edit cli output.
