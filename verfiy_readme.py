@@ -1,5 +1,6 @@
 import os
 import re
+import argparse
 import subprocess
 
 
@@ -67,7 +68,8 @@ def print_missing_entries(missing_entries):
 
 
 def find_emtpy_files(structure):
-    """Find files that have 0 line"""
+    """Find files that have 0 lines"""
+    small_files = []
     for dir in structure:
         if dir == ".":
             path = "./cheatsheets/"
@@ -78,15 +80,27 @@ def find_emtpy_files(structure):
             file_len = subprocess.check_output(f"wc -l {path}/{file}", shell=True)
             file_len = int(file_len.decode("utf-8").split(" ")[0])
             if file_len <= 1:
-                print(f"{file} has length {file_len}")
+                small_files.append((file, file_len))
+    return small_files
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Verfify validity of README.md, and get insights about cheatsheets')
+    parser.add_argument('-r', '--readme', type=str, default='README.md',
+                        help='Path to the readme file.')
+    parser.add_argument('-s', '--small-files', action='store_true',
+                        help='Size of each batch.')
+
+    args = parser.parse_args()
+
     root_dir = "./cheatsheets"
     structure = get_files_and_dirs(root_dir)
-    find_emtpy_files(structure)
-    # readme_structure = get_entries_from_readme(os.path.join("./", "README.md"))
-    #
-    # missing_entries = find_missing_entries(structure, readme_structure)
-    #
-    # print_missing_entries(missing_entries)
+
+    if args.small_files:
+        small_files = find_emtpy_files(structure)
+        for file in small_files:
+            print(f"{file[0]} has length {file[1]}")
+    else:
+        readme_structure = get_entries_from_readme(os.path.join("./", "README.md"))
+        missing_entries = find_missing_entries(structure, readme_structure)
+        print_missing_entries(missing_entries)
