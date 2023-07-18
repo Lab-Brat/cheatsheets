@@ -4,6 +4,7 @@ This repository is a collection of cheat sheets and notes on various topics, mai
 #### cheatsheets
 * `css-basics.md` - Really basic CSS stuff.
 * `docker.md` - Commands to administrate docker containers.
+* `flutter_setup.md` - Set up Flutter and Android SDK on Arch Linux.
 * `git.md` - Basic Git commands.
 * `git_config.md` - Local git configuration.
 * `gitlab.md` - GitLab configuration.
