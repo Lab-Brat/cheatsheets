@@ -1,5 +1,20 @@
 ## Cheatsheets
-This repository is a collection of cheat sheets and notes on various topics, mainly focused around scripting programming languages, Linux command line and DevOps tools.
+This repository is a collection of cheat sheets and notes on various topics, 
+mainly focused around programming, Linux and DevOps.  
+
+Repo also has a Python CLI tool to validate `README.md` and show some info 
+about cheatsheets. Here is what it can do now:
+```bash
+# Check if there are discrepancies between readme and files in ./cheatsheets 
+./verfiy_readme 
+
+# Check which files have less than 1 lines of content in it
+./verfiy_readme -s
+
+# Print help message
+./verfiy_readme -h
+```
+  
 
 #### cheatsheets
 * `css-basics.md` - Really basic CSS stuff.
