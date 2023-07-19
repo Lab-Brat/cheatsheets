@@ -4,6 +4,6 @@
 * `/msg NickServ IDENTIFY LabBrat <password>` -> link additional nicks to primary account
 
 #### Useful Links
-* [[Link]](https://libera.chat/guides/registration) - Nickname registraion
-* [[Link]](https://libera.chat/chanreg/) - Channel registration
+* [[Link](https://libera.chat/guides/registration)] - Nickname registraion
+* [[Link](https://libera.chat/chanreg/)] - Channel registration
 
