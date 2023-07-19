@@ -23,6 +23,7 @@ about cheatsheets. Here is what it can do now:
 * `git.md` - Basic Git commands.
 * `git_config.md` - Local git configuration.
 * `gitlab.md` - GitLab configuration.
+* `irc.md` - common tasks in IRC.
 * `jenkins.md` - Jenkins configuration.
 * `nginx.md` - Nginx configuration.
 * `nvim.md` - Neovim keys.
