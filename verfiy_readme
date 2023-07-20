@@ -3,6 +3,7 @@ import os
 import re
 import argparse
 import subprocess
+from pprint import pprint
 
 
 def get_files_and_dirs(root_path):
@@ -28,6 +29,8 @@ def get_entries_from_readme(readme_path):
 
     with open(readme_path, "r") as f:
         content = f.read()
+    title_id = content.index("#### cheatsheets\n")
+    content = content[title_id:]
 
     links = re.findall(r"\`(.*?)\`", content)
 
