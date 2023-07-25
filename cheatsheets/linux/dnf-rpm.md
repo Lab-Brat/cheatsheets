@@ -6,8 +6,10 @@
 
 #### update
 * `dnf check-update` -> check available updates 
-* `dnf update --security` -> install only security updates 
-* 
+* `dnf list available <package> -> list `
+* `dnf update --security` -> install only security updates
+* `dnf update --advisory=RHSA-2014:0159` -> install security updates from a specific advisory
+
 #### searching
 * `dnf info <package>` -> info about package
 * `dnf list installed` -> list installed packages
@@ -15,8 +17,7 @@
 * `dnf provides <package>` -> info general about package
   * example: `dnf provides "*/nginx.conf"`
 * `dnf search <keyword>` -> search for keywords in package names
-  * example: `dnf search text editor>`
- 
+  * example: `dnf search text editor>` 
 
 ### repositories
 #### basic commands
