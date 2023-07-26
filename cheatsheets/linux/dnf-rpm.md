@@ -14,6 +14,7 @@
 * `dnf info <package>` -> info about package
 * `dnf list installed` -> list installed packages
   * example: `dnf list installed vim*`
+* `dnf --showduplicates list available <package>` -> list all available versions
 * `dnf provides <package>` -> info general about package
   * example: `dnf provides "*/nginx.conf"`
 * `dnf search <keyword>` -> search for keywords in package names
@@ -43,7 +44,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-$releasever
 ```
 * append the following line to disable update for a specific package
 ```ini
-exclude=<package-name>
+exclude=<package>
 ```
 
 #### extras
