@@ -28,7 +28,7 @@
 * `dnf config-manager --set-enabled ...` -> enable repo 
 * `dnf config-manager --set-disabled ...` -> disable repo
 
-#### add repository manually
+#### repo configuration file
 * `vim /etc/yum.repos.d/epel.repo` -> create repository file
 * append the following content
 ```ini
@@ -40,6 +40,10 @@ enabled=1
 gpgcheck=1
 countme=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-$releasever
+```
+* append the following line to disable update for a specific package
+```ini
+exclude=<package-name>
 ```
 
 #### extras
