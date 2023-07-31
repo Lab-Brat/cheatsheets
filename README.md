@@ -43,6 +43,8 @@ about cheat sheets. Here is what it can do now:
   * `gentoo-install.md` - Gentoo installation walkthrough.
   * `gentoo-git.md` - Setting up Portage to sync packages with Git.
   * `Portage.md` - Gentoo package manager commands.
+* `Kubernetes`
+  * `kubectl_basics.md` - Basic kubecl commands.
 * `linux` - Directory of cheatsheets on various Linux topics.
   * `Arch.md` - Commands used to setup Arch Linux distribution.
   * `awk.md` - Use awk to parse command line output.
