@@ -34,3 +34,9 @@ export CHROME_EXECUTABLE="chromium"
 * `yay -S visual-studio-code-bin` -> Install Visual Studio Code
 * Install `Flutter` extension
 
+* Connect Android hardware device to VS Code 
+  * Go to `Settings` -> `About` and click on `MIUI Version` multiple times until developer mode it on
+  * Go to `Settings` -> `Additional Settings` -> `Developer options`
+  * Turn On `USB Debugging`
+  * Turn On `Install via USB`
+
