@@ -2,6 +2,15 @@
 This repository is a collection of cheat sheets and notes on various topics, 
 mainly focused around programming, Linux and DevOps.  
 
+Cheat sheets can be accessed via an API:
+```bash
+# find cheat sheets will 'git' in the filename
+curl https://labbrat.net/notes/find/git
+
+# print cheat git.md sheet
+curl https://labbrat.net/notes/git
+```
+
 Repo also has a Python CLI tool to validate `README.md` and show some info 
 about cheat sheets. Here is what it can do now:
 ```bash
