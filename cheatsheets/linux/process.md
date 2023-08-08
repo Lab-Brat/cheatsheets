@@ -11,6 +11,7 @@ Commands:
 * `w`and `who`- show who is logged on
 * `tty`- show current users pseudo terminal
 * `ps -ft pts/1`: get PID of a pseudo terminal  
+* `for pid in $(ps -ef | grep "puppet" | awk '{print $2}'); do kill -9 $pid; done` -> kill all sessions that are opened by puppet
 
 Kill SSH session:
 * Find sessions
