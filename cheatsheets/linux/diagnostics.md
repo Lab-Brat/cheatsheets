@@ -10,3 +10,4 @@
 * `find . -maxdepth 1 -type d -mtime +7 | wc -l` -> find directories older than 7 days
 * `find ./ -type f -name "dump.*" -mtime +10 -print0 | du -hc --files0-from - | tail -n 1` -> find dump files older than 10 days and print their combined size
 * `find ./ -type f -name "dump.*" -mtime +10 -exec rm -f {} +` -> find files older than 10 days and delete them.
+* `find . -name "*.json" ! -path "./build/*" ! -path "./functions/node_modules/*"` -> exclude some paths from find
