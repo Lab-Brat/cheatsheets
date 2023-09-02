@@ -49,6 +49,7 @@ about cheat sheets. Here is what it can do now:
   * `ansible-playbook.md` - run Ansible playbook and advanced concepts.
   * `ansible.md` - Ansible cli options and ad hoc commands.
 * `Gentoo`
+  * `gentoo-chroot.md` - Chroot to Gentoo from Arch installation media.
   * `gentoo-install.md` - Gentoo installation walkthrough.
   * `gentoo-git.md` - Setting up Portage to sync packages with Git.
   * `Portage.md` - Gentoo package manager commands.
