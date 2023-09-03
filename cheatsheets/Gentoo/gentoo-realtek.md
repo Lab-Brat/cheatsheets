@@ -38,7 +38,15 @@ cp /boot/vmlinuz-<v> ./vmlinuz.efi
 cp /boot/initramfs-<v>.img ./initramfs.img
 ```
 
-**3rd party drivers**  
+**Additionally**  
+Also install network manager to simplify wifi connections.
+```bash
+echo 'net-misc/networkmanager bluetooth dhclient iwd systemd tools wifi' >> /etc/portage/package.use/networkmanager
+emerge --ask --quiet-build networkmanager
+```
+
+
+**Alternatively, install 3rd party drivers**  
 Driver link: https://github.com/lwfinger/rtw89  
 Steps to install:
 ```bash
