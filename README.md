@@ -52,6 +52,7 @@ about cheat sheets. Here is what it can do now:
   * `gentoo-chroot.md` - Chroot to Gentoo from Arch installation media.
   * `gentoo-install.md` - Gentoo installation walkthrough.
   * `gentoo-git.md` - Setting up Portage to sync packages with Git.
+  * `gentoo-realtek.md` - Troubleshooting realtek wifi drivers
   * `Portage.md` - Gentoo package manager commands.
 * `Kubernetes`
   * `kubectl_basics.md` - Basic kubecl commands.
