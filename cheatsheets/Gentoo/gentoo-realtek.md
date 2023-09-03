@@ -43,6 +43,13 @@ Also install network manager to simplify wifi connections.
 ```bash
 echo 'net-misc/networkmanager bluetooth dhclient iwd systemd tools wifi' >> /etc/portage/package.use/networkmanager
 emerge --ask --quiet-build networkmanager
+
+# disconnect previous connections in iwd
+iwctl known-networks SSID forget
+
+systemctl start --now NetworkManager
+nmclie device wifi list
+nmcli device wifi connect <SSID> password <password>
 ```
 
 
