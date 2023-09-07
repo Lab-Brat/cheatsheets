@@ -15,5 +15,11 @@
 * `kubectl scale --replicaset=2 replicaset <replicaset_name>` - scale to 2 replicasets
 * `kubectl describe replicaset <replicaset_name>` - show additional info about replicaset
 
+#### Deployment
+* `kubectl create -f deployment.yaml` -> create deployment from yaml manifest
+* `kubetctl get deploy` -> list active deployments
+* `kubetctl set image deployment <dep_name> '*=nginx:1.13'` -> update image version for all pods in the deployment
+* `kubetctl rollout undo deployment <dep_name>` -> roll back to nginx:1.12
+
 #### Misc
 * `kubectl compleltion bash > ~/.kube/compleltion.bash.inc` - add completion for kubectl bash commands 
