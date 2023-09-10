@@ -29,3 +29,6 @@ cd /boot/efi
 mv vmlinuz mvlinuz.bak
 cp ../vmlinux-6.5.2_x86 ./vmlinuz
 ```
+
+#### Links
+* [[Link](https://wiki.gentoo.org/wiki/Kernel/Gentoo_Kernel_Configuration_Guide)] - Gentoo Linux kernel configuration guide
