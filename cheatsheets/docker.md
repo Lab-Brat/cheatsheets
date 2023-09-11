@@ -23,11 +23,10 @@
 * `docker volume rm <vid>` -> delete volume
 * `docker volume rm $(docker volume ls -qf dangling=true)` -> delete unused volumes
 
-#### Registry
+#### Misc
 * `curl -X GET http://localhost:5000/v2/_catalog` -> list available images from local registry 
-
-#### Inspect
 * `docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_name>` -> get IP address of the container 
+* `docker system prune -a` -> clean all images, containers and networks
 
 #### Dockerfile
 * `docker build -t <image-name> .` -> build image from a Dockerfile in current directory 
