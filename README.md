@@ -41,13 +41,16 @@ about cheat sheets. Here is what it can do now:
 * `vagrant.md` - Setup Vagrant box and run it.
 * `vim.md` - vim command key bindings.
 * `virtualization.md` - Automate different virtualization platforms.
-* `GoogleSRE` - notes on Site Reliability Engineering book,
-  * `ch3_risk.md` - Chapter 3 Embracing Risk.
-  * `ch5_toil.md` - Chapter 5 Eliminating Toil.
-* `ansible` - Directory of cheatsheets about Ansible.
+* `Ansible` - Directory of cheatsheets about Ansible.
   * `ansible-ad-hoc.md` - Ansible ad hoc commands.
   * `ansible-playbook.md` - run Ansible playbook and advanced concepts.
   * `ansible.md` - Ansible cli options and ad hoc commands.
+* `Arch` - Arch Linux notes
+  * `arch_install.md` - installation guide
+  * `pacman.md` - Pacman and yay notes
+* `GoogleSRE` - notes on Site Reliability Engineering book,
+  * `ch3_risk.md` - Chapter 3 Embracing Risk.
+  * `ch5_toil.md` - Chapter 5 Eliminating Toil.
 * `Gentoo`
   * `gentoo-chroot.md` - Chroot to Gentoo from Arch installation media.
   * `gentoo-install.md` - Gentoo installation walkthrough.
