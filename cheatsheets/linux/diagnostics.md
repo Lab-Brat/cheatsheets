@@ -3,7 +3,7 @@
 #### Disk Usage
 * `du -sh *` -> check disk usage of files and dirs
 * `du -sh $(ls -A)` -> check disk usage of files and dirs
-
+* `ls -lSrh` -> list files by increasing size
 
 #### Find
 * `find ./ -name "*.log" -exec du -s -h {} \; | sort -h` -> find .log files, show du and sort by size
