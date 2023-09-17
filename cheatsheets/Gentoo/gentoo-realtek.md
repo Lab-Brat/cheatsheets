@@ -61,13 +61,18 @@ git clone https://github.com/lwfinger/rtw89.git
 cd rtw89
 make
 make install
-mkdir /usr/lib/firmware/rtw89
-cp  rtw8852a_fw.bin  /usr/lib/firmware/rtw89/
-modprobe rtw89pci
 ```
-Steps are take from [here](https://askubuntu.com/questions/1352260/wifi-adapter-not-found-realtek-10ec8852-on-ubuntu-21-04)
+
+And deactivate some module features by creating `/lib/modprobe.d/70-rtw.conf`
+```bash
+options rtw89pci disable_clkreq=y disable_aspm_l1=y disable_aspm_l1ss=y
+options rtw89core disable_ps_mode=y
+```
 
 
 ### Links
+* [[Link](https://github.com/lwfinger/rtw89/issues/262)] - Github Issue 262
+* [[Link](https://github.com/lwfinger/rtw89/issues/240)] - Github Issue 240
+* [[Link](https://www.reddit.com/r/archlinux/comments/14bkwsu/rtw89_8852be_issues_on_kernel_638/)] - Reddit post about driver
 * [[Link](https://forums.gentoo.org/viewtopic-t-1074064-start-0.html)] - Gentoo Forums, similar issue
 * [[Link](https://wiki.ubuntu.com/Kernel/Firmware)] - Ubuntu Wiki about firmware
