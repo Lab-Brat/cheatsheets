@@ -62,8 +62,6 @@ about cheat sheets. Here is what it can do now:
 * `linux` - Directory of cheatsheets on various Linux topics.
   * `Arch.md` - Commands used to setup Arch Linux distribution.
   * `awk.md` - Use awk to parse command line output.
-  * `bash-conditions.md` - test statements in Bash 
-  * `bash-control-flow.md` - conditionals in Bash - if, for, while etc.
   * `beeper.md` - Play Empire Anthem on motherboard beeper.
   * `certificates.md` - Manage TLS certificates using certtool and openssl.
   * `combined_file_processing.md` - Combined usage of awk, sed and grep.
