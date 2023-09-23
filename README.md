@@ -63,6 +63,8 @@ about cheat sheets. Here is what it can do now:
   * `Arch.md` - Commands used to setup Arch Linux distribution.
   * `awk.md` - Use awk to parse command line output.
   * `beeper.md` - Play Empire Anthem on motherboard beeper.
+  * `bash-conditions.md` - Conditionals in Bash.
+  * `bash-control-flow.md` - Control flow in Bash.
   * `certificates.md` - Manage TLS certificates using certtool and openssl.
   * `combined_file_processing.md` - Combined usage of awk, sed and grep.
   * `curl-wget.md` - Download files and read html page with curl and wget.
