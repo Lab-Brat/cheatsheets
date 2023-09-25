@@ -73,7 +73,6 @@ about cheat sheets. Here is what it can do now:
   * `dnf-rpm.md` - DNF and YUM package manager commands.
   * `drivers.md` - Information on how drivers are processed in Linux.
   * `drivers-network.md` - Information on how to troubleshoot network dirvers.
-  * `fdisk.md` - Create and modify partitions.
   * `firewall-firewalld-scripts.md` - Bash scripts for firewalld configuration.
   * `firewall-firewalld.md` - RHEL specific firewalld and Debian specific ufw.
   * `firewall-iptables.md` - Firewall configuration with iptables.
