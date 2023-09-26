@@ -30,6 +30,7 @@ about cheat sheets. Here is what it can do now:
 * `docker.md` - Commands to administrate docker containers.
 * `flutter_setup.md` - Set up Flutter and Android SDK on Arch Linux.
 * `git.md` - Basic Git commands.
+* `gpg.md` - GPG keys.
 * `git_config.md` - Local git configuration.
 * `gitlab.md` - GitLab configuration.
 * `irc.md` - common tasks in IRC.
