@@ -21,5 +21,14 @@
 * `kubetctl set image deployment <dep_name> '*=nginx:1.13'` -> update image version for all pods in the deployment
 * `kubetctl rollout undo deployment <dep_name>` -> roll back to nginx:1.12
 
+#### Probes
+* `Livness`
+* `Readiness`
+* `Startup`
+
+[Link](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/) 
+to official documentation on probes.  
+
+
 #### Misc
 * `kubectl compleltion bash > ~/.kube/compleltion.bash.inc` - add completion for kubectl bash commands 
