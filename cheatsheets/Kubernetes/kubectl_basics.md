@@ -29,6 +29,13 @@
 [Link](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/) 
 to official documentation on probes.  
 
+#### Resources
+* `Limits`
+* `Requests`
+
+[Link](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/) 
+to official documentation on resources.
+
 
 #### Misc
 * `kubectl compleltion bash > ~/.kube/compleltion.bash.inc` - add completion for kubectl bash commands 
