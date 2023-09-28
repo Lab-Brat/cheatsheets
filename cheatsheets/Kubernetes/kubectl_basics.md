@@ -32,9 +32,18 @@ to official documentation on probes.
 #### Resources
 * `Limits`
 * `Requests`
+* `Pod Priority`
 
 [Link](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/) 
-to official documentation on resources.
+to documentation on limits and requests.  
+
+[Link](https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/) 
+to documentation on pod priority.
+
+**Note** Set requests and limits on all application and nodes, including 
+master, for kubectl to correctly calculate total allocated resources. 
+This is important becuase it will influence 
+[quality of service](https://kubernetes.io/docs/tasks/configure-pod-container/quality-service-pod/)
 
 
 #### Misc
