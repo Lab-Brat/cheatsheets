@@ -7,7 +7,7 @@
 
 #### Run Commands
 * `ansible all -m shell -a 'hostnamctl'` -> run ad hoc command with env 
-* `ansible all -m command -a 'hostnamctl'` -> run ad hoc command without env, default behaviour if module is not specified
+* `ansible all -m command -a 'hostnamctl'` -> run ad hoc command without env, default behaviour if module is not specified  
 **NOTE** `shell` also supports <, >, |, and & operation, while `command` does not.
 
 #### Copy and remove
