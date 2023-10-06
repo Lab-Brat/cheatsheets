@@ -19,7 +19,8 @@
 * check uri connectivity on host ```ansible all -m uri -a "url=https://ya.ru return_content=yes"```  
 
 #### Package management
-* install programs with yum module ```ansible all -m yum -a "name=tmux state=installed"```  
+* install packages with yum ```ansible all -m yum -a "name=tmux state=installed"```  
+* update packages with yum ```ansible all -m yum -a "name=kernel-tools state=latest update_only=yes"```
 
 #### Services
 * start service ```ansible all -m service -a "name=httpd state=started"```  
