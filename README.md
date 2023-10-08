@@ -89,4 +89,5 @@ about cheat sheets. Here is what it can do now:
   * `sed.md` - sed command to edit cli output.
   * `ssh.md` - Commands to setup ssh authentication between servers and it's configuration.
   * `tmux.md` - Tmux basic commands.
+  * `top.md` - Systems stats with top command.
   * `users-acess.md` - Manage users, groups and their access.
