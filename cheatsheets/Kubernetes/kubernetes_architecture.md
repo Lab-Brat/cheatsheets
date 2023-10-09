@@ -18,6 +18,9 @@ Components:
 Every-day hard work of executing user applications.
 
 Components:
+* `kubelet` -> listen to API and execute tasks from control plane
+* `container runtime` -> manage the execution and lifecycle of containers
+* `kube-proxy` -> manager networking in cluster
 
 
 #### Links
