@@ -83,6 +83,7 @@ about cheat sheets. Here is what it can do now:
   * `infra.md` - Infrastructure administrations tools, like ldapsearch, dig etc.
   * `kernel.md` - Modify and install custom Linux kernel.
   * `logs.md` - Manage logs and configuration of a centralized log server.
+  * `namespace.md` - Understand namespaces and how it is used in Docker.
   * `network.md` - Basic network managing, such as configuration of network interfaces and ports.
   * `network-diagnostics.md` - Network diagnostics using mtp, traceroute and tracepath.
   * `process.md` - Find information about running processes and top utility.
