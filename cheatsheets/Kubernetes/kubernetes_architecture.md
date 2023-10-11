@@ -23,6 +23,10 @@ Components:
 * `kube-proxy` -> manager networking in cluster
 
 
+#### Addons
+
+
+
 #### Links
 * [[Link](https://kubernetes.io/docs/concepts/architecture/)] - Kubernetes cluster architecture documentation
 
