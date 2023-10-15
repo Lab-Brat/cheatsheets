@@ -49,6 +49,7 @@ about cheat sheets. Here is what it can do now:
   * `arch_install.md` - installation guide
   * `pacman.md` - Pacman and yay notes
 * `Containers` - Containerization theory and practice.
+  * `containers_general.md` - Terminology guide.
   * `docker_commands.md` - Commands to administrate docker containers.
   * `namespace.md` - Understand namespaces and how it is used in Docker.
 * `GoogleSRE` - notes on Site Reliability Engineering book,
