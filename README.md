@@ -27,7 +27,6 @@ about cheat sheets. Here is what it can do now:
 
 #### cheatsheets
 * `css-basics.md` - Really basic CSS stuff.
-* `docker.md` - Commands to administrate docker containers.
 * `flutter_setup.md` - Set up Flutter and Android SDK on Arch Linux.
 * `git.md` - Basic Git commands.
 * `gpg.md` - GPG keys.
@@ -49,6 +48,9 @@ about cheat sheets. Here is what it can do now:
 * `Arch` - Arch Linux notes
   * `arch_install.md` - installation guide
   * `pacman.md` - Pacman and yay notes
+* `Containers` - Containerization theory and practice.
+  * `docker_commands.md` - Commands to administrate docker containers.
+  * `namespace.md` - Understand namespaces and how it is used in Docker.
 * `GoogleSRE` - notes on Site Reliability Engineering book,
   * `ch3_risk.md` - Chapter 3 Embracing Risk.
   * `ch5_toil.md` - Chapter 5 Eliminating Toil.
@@ -83,7 +85,6 @@ about cheat sheets. Here is what it can do now:
   * `infra.md` - Infrastructure administrations tools, like ldapsearch, dig etc.
   * `kernel.md` - Modify and install custom Linux kernel.
   * `logs.md` - Manage logs and configuration of a centralized log server.
-  * `namespace.md` - Understand namespaces and how it is used in Docker.
   * `network.md` - Basic network managing, such as configuration of network interfaces and ports.
   * `network-diagnostics.md` - Network diagnostics using mtp, traceroute and tracepath.
   * `process.md` - Find information about running processes and top utility.
