@@ -50,6 +50,7 @@ about cheat sheets. Here is what it can do now:
   * `pacman.md` - Pacman and yay notes
 * `Containers` - Containerization theory and practice.
   * `containers_general.md` - Terminology guide.
+  * `container_lifecycle.md` - Step-by-step lifecycle of a container.
   * `docker_commands.md` - Commands to administrate docker containers.
   * `namespace.md` - Understand namespaces and how it is used in Docker.
 * `GoogleSRE` - notes on Site Reliability Engineering book,
