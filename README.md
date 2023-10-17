@@ -65,6 +65,7 @@ about cheat sheets. Here is what it can do now:
 * `Kubernetes`
   * `kubernetes_architecture.md` - Architecture cheatsheets.
   * `kubectl_basics.md` - Basic kubecl commands.
+  * `kubernetes_pod.md` - Information on Pods.
 * `linux` - Directory of cheatsheets on various Linux topics.
   * `Arch.md` - Commands used to setup Arch Linux distribution.
   * `awk.md` - Use awk to parse command line output.
