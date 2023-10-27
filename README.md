@@ -66,6 +66,7 @@ about cheat sheets. Here is what it can do now:
   * `kubernetes_architecture.md` - Architecture cheatsheets.
   * `kubectl_basics.md` - Basic kubecl commands.
   * `kubernetes_pod.md` - Information on Pods.
+  * `kubernetes_probes.md` - Information on Probes.
   * `minikube.md` - Install and use Minikube.
 * `linux` - Directory of cheatsheets on various Linux topics.
   * `Arch.md` - Commands used to setup Arch Linux distribution.
