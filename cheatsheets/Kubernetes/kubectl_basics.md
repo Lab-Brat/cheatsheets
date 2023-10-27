@@ -1,24 +1,29 @@
 ### Basic kubectl commands
 
-#### Pods
-* `kubectl create -f pod.yaml` - create pod from yaml manifest
-* `kubectl get pod` - list active pods
-* `kubectl get pod --show-labels` - list active pods with a specific label
-* `kubectl delete pod --all` - delete all pods
-* `kubdectl describe pod <pod_name>` - show additional pod info
+<object> == pod, replicaset, deployment etc.
 
-#### Replicaset
-* `kubectl create -f replicaset.yaml` create replicaset from yaml manifest
-* `kubectl apply -f replicaset.yaml` apply yaml manifest changes to replicaset
-* `kubectl get replicaset` - list active replicasets
+#### Working with cluster
+* `kubectl get nodes` - get control plane and worker nodes
+* `kubectl describe node <node_name>` - show node information
+
+#### Create / Delete
+* `kubectl create -f <object_name>.yaml` - create an object from yaml manifest
+* `kubectl delete <object> <object_name>` - delete a single object
+* `kubectl delete <object> --all` - delete all objects
+
+#### Get Information
+* `kubectl get <object>` - list active pods
+* `kubectl get <object> --show-labels` - list active pods with a specific label
+* `kubectl get <object> --watch` - interactively follow object launches
+* `kubectl describe <object> <object_name>` - show additional pod info
+* `kubectl describe pods spec.initContainers` - show a specific parameter of a pod
+* `kubectl explain <object>` - describe fields and structure of various resources
+
+#### Modify Existing Object
+* `kubectl set image deployment <dep_name> '*=nginx:1.13'` -> update image version for all pods in the deployment
+* `kubectl rollout undo deployment <dep_name>` -> roll back to nginx:1.12
 * `kubectl scale --replicaset=2 replicaset <replicaset_name>` - scale to 2 replicasets
-* `kubectl describe replicaset <replicaset_name>` - show additional info about replicaset
-
-#### Deployment
-* `kubectl create -f deployment.yaml` -> create deployment from yaml manifest
-* `kubetctl get deploy` -> list active deployments
-* `kubetctl set image deployment <dep_name> '*=nginx:1.13'` -> update image version for all pods in the deployment
-* `kubetctl rollout undo deployment <dep_name>` -> roll back to nginx:1.12
+* `kubectl exec --stdin --tty <pod_name> -- /bin/sh` - open interactive shell to container
 
 #### Misc
 * `kubectl compleltion bash > ~/.kube/compleltion.bash.inc` - add completion for kubectl bash commands 
