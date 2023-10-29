@@ -63,8 +63,9 @@ about cheat sheets. Here is what it can do now:
   * `gentoo-realtek.md` - Troubleshooting realtek wifi drivers
   * `Portage.md` - Gentoo package manager commands.
 * `Kubernetes`
-  * `kubernetes_architecture.md` - Architecture cheatsheets.
   * `kubectl_basics.md` - Basic kubecl commands.
+  * `kubernetes_architecture.md` - Architecture cheatsheets.
+  * `kubernetes_deployment.md` - Information on Deployments.
   * `kubernetes_pod.md` - Information on Pods.
   * `kubernetes_probes.md` - Information on Probes.
   * `kubernetes_resources.md` - Information on Resources.
