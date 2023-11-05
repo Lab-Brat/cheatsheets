@@ -61,6 +61,12 @@ git merge dev
 git push
 ```
 
+#### Push a commit to the latest Pull Request
+```
+git commit -m 'last fix'
+git push -f origin HEAD
+```
+
 #### Tags
 * `git tag -a v0.1.1` -> create a tag
 * `git push origin v0.1.1` -> push a tag to repository
