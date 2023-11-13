@@ -16,3 +16,8 @@ Service types:
 * ClusterIP: stable virtual IP that's only accessible from inside the cluster.
 * NodePort: extension of ClusterIP, exposes a port to outside.
 * LoadBalancer: grants external access via a public IP or DNS name.
+
+#### Links
+- [[Link](https://kubernetes.io/docs/concepts/services-networking/service/)] - Service object documentation
+- [[Link](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/)] - EndpointSlices object documentation
+
