@@ -10,6 +10,7 @@
 * `kubectl create -f <object_name>.yaml` - create an object from yaml manifest
 * `kubectl delete <object> <object_name>` - delete a single object
 * `kubectl delete <object> --all` - delete all objects
+* `kubectl expose deployment <deployment_name> --type=NodePort` - attach a service to a deployment
 
 #### Get Information
 * `kubectl get <object>` - list active pods
