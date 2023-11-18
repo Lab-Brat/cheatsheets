@@ -1,5 +1,5 @@
-# Virtualization
-#### VirtualBox
+# VirtualBox
+## List of Issues
 * add guest additions  
 ```
 #shutdown vm  
@@ -8,11 +8,6 @@
 mkdir /cdrom  
 mount /dev/cdrom /cdrom ; cd /cdrom  
 sh VBoxLinuxAdditions.run --nox11 
-```
-
-* run commands in vm  
-```
-vboxmanage guestcontrol <VM name> --username root --password <pass> <command>
 ```
 
 * **\[ERROR\]** no kernel modules installed rc=-1908  
@@ -33,25 +28,8 @@ sudo /sbin/vboxconfig
 sudo vboxreload
 ```
 
-
-#### VboxManage
-* `vboxmanage list vms` -> list vms
-* `vboxmanage list runningvms` -> list running vms
-* `vboxmanage start <VM name>` -> turn on VM
-* `vboxmanage controlvm <VM name> poweroff` -> turn off VM
-* `vboxmanage controlvm <VM name> reset` -> reset VM
-* `vboxmanage showvminfo --details <VM ID> | fgrep MAC` -> get mac address
-* `vboxmanage dhcpserver findlease --network NatNetwork --mac-address=08002783E8BB` -> get ip address
-* enlarge disk  
-First, go to `Files` -> `Tools` -> `Virtual Media Manager` 
-and change the virtual size of the disk. Detatch the disk, and:
-```bash
-vboxmanage showmediuminfo <disk_name>.vdi
-vboxmanage modifyhd <UUID> --resize <Capacity>
-```
-
-
-### Useful links
+## Useful links
 * [[Link]](https://rhv.bradmin.org/ovirt-engine/docs/Installing_Red_Hat_Virtualization_as_a_self-hosted_engine_using_the_command_line/Troubleshooting_SHE_SHE_cli_deploy.html) - Troubleshooting
 * [[Link]](https://download.virtualbox.org/virtualbox/) - VDSM client 
 * [[Link]](https://download.virtualbox.org/virtualbox/) - VirtualBox Downloads page
+

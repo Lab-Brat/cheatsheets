@@ -40,7 +40,6 @@ about cheat sheets. Here is what it can do now:
 * `pypi.md` - Some tips and memos on using PyPI.
 * `vagrant.md` - Setup Vagrant box and run it.
 * `vim.md` - vim command key bindings.
-* `virtualization.md` - Automate different virtualization platforms.
 * `Ansible` - Directory of cheatsheets about Ansible.
   * `ansible-ad-hoc.md` - Ansible ad hoc commands.
   * `ansible-playbook.md` - run Ansible playbook and advanced concepts.
@@ -103,3 +102,6 @@ about cheat sheets. Here is what it can do now:
   * `tmux.md` - Tmux basic commands.
   * `top.md` - Systems stats with top command.
   * `users-acess.md` - Manage users, groups and their access.
+* `Virtualization`
+  * `vboxmanage.md` -> Cheat sheet on vboxmanage.
+  * `virtualbox_issues.md` -> Common issues in Virtualbox
