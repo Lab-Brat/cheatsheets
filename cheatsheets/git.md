@@ -67,6 +67,9 @@ git commit -m 'last fix'
 git push -f origin HEAD
 ```
 
+#### Copy repository to another origin
+URL: https://gist.github.com/niksumeiko/8972566
+
 #### Tags
 * `git tag -a v0.1.1` -> create a tag
 * `git push origin v0.1.1` -> push a tag to repository
