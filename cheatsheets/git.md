@@ -82,7 +82,7 @@ URL: https://gist.github.com/niksumeiko/8972566
 * `git submodule update --recursive --remote` -> get the latest version of submodules
 * `git submodule foreach git pull` -> pull latest changes in every submodule
 
-#### Find first appearance keyword 
+#### Find first appearance of a keyword in git history
 ```
 # find the first commit hash where keyword appeared
 git grep "<keyword>" $(git rev-list --all) | tail -n 10
