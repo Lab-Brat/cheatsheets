@@ -76,9 +76,17 @@ URL: https://gist.github.com/niksumeiko/8972566
 * `git tag -f 0.1.5 <commit-hash>` -> update a tag to point to another commit
 * `git push -f origin v0.1.1` -> overwrite a tag in the repository
 
-
 #### Submodules
 * `git submodule init` -> initialized submodules
 * `git submodule update` -> update submodules to predefined commit
 * `git submodule update --recursive --remote` -> get the latest version of submodules
 * `git submodule foreach git pull` -> pull latest changes in every submodule
+
+#### Find first appearance keyword 
+```
+# find the first commit hash where keyword appeared
+git grep "<keyword>" $(git rev-list --all) | tail -n 10
+
+# show commit details
+git show <hash>
+```
