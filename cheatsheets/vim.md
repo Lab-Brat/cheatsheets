@@ -7,6 +7,12 @@
 * o -> insert from a new line below
 * O -> insert from a new line above
 
+#### Command :
+* `:s/word_a/word_b/` -> change word_a to word_b on the selected line
+* `:%s/word_a/word_b/g` -> change all word_a occurences to word_b on the whole file
+* `set paste` -> set mode to paste, which will not autoindent on paste
+* `set nopaste` -> turn of paste mode
+
 #### Combinations 
 * add space to multiple lines
 ```
