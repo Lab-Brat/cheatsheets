@@ -17,6 +17,11 @@ Service types:
 * NodePort: extension of ClusterIP, exposes a port to outside.
 * LoadBalancer: grants external access via a public IP or DNS name.
 
+Although services can function as load balancer and a gateway, there 
+are downside. NodePort only works in port range 30000-32767, and 
+LoadBalancer requires 1-to-1 mapping between the service and cloud 
+load-balancer, which can be very expensive.  
+
 
 #### Links
 - [[Link](https://kubernetes.io/docs/concepts/services-networking/service/)] - Service object documentation
