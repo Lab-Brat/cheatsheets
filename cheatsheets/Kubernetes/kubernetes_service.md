@@ -1,7 +1,7 @@
 ### Services
 
 Services are objects in Kubernetes that provides stable networking 
-(IP, DNS name, port) for Pods. They are like having a static front-end 
+(IP, DNS name, port) for Pods, by providing a static front-end 
 and a dynamic back-end. The front-end consists of the IP, DNS name, and 
 port that never changes. The back-end comprises the list of healthy Pods 
 and can be constantly changing.  
