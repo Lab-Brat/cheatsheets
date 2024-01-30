@@ -77,7 +77,7 @@ about cheat sheets. Here is what it can do now:
   * `bash-conditions.md` - Conditionals in Bash.
   * `bash-control-flow.md` - Control flow in Bash.
   * `certificates.md` - Manage TLS certificates using certtool and openssl.
-  * `combined_file_processing.md` - Combined usage of awk, sed and grep.
+  * `one_liners.md` - One-line bash scripts.
   * `curl-wget.md` - Download files and read html page with curl and wget.
   * `diagnostics.md` - Disk usage and other system diagnostics.
   * `diagnostics-scripts.md` - Helpful scripts for Linus syst diagnostics.
