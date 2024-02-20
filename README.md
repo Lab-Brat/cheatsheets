@@ -47,6 +47,10 @@ about cheat sheets. Here is what it can do now:
 * `Arch` - Arch Linux notes
   * `arch_install.md` - installation guide
   * `pacman.md` - Pacman and yay notes
+* `BashScripts` - Handy bash scripts.
+  * `clean_dir.sh` - Delete old filed in a directory.
+  * `get_docker_images_du.sh` - Read docker images sizes that are older than 2w and sum it up.
+  * `repo_on_off.sh` - Enable/disabled repositories on RHEL in bulk.
 * `Containers` - Containerization theory and practice.
   * `containers_general.md` - Terminology guide.
   * `container_lifecycle.md` - Step-by-step lifecycle of a container.
