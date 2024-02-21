@@ -3,6 +3,7 @@
 #### Disk Usage
 * `du -sh *` -> check disk usage of files and dirs
 * `du -sh $(ls -A)` -> check disk usage of files and dirs
+* `du -ch --max-depth=0 $(ls -d .*) | tail -n 1` -> check disk usage of hidden files and dirs
 * `ls -lSrh` -> list files by increasing size
 
 #### Find
