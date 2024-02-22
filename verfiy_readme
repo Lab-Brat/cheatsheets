@@ -35,7 +35,7 @@ def get_entries_from_readme(readme_path):
 
     cheatsheet_dir = r"."
     for link in links:
-        if ".md" in link:
+        if ".md" in link or ".sh" in link:
             readme_structure[cheatsheet_dir].append(link)
         else:
             cheatsheet_dir = link
@@ -46,7 +46,7 @@ def get_entries_from_readme(readme_path):
 
 def find_missing_entries(structure, readme_structure):
     """
-    Return a list of entries present in the structure
+    Return a list of entries present in the structure 
     but missing in the readme_structure.
     """
     missing_entries = {}
