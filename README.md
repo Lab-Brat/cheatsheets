@@ -66,22 +66,22 @@ about cheat sheets. Here is what it can do now:
   * `gentoo-realtek.md` - Troubleshooting realtek wifi drivers
   * `Portage.md` - Gentoo package manager commands.
 * `Kubernetes`
-  * `kubectl_basics.md` - Basic kubecl commands.
   * `kubernetes_architecture.md` - Architecture cheatsheets.
+  * `kubectl_basics.md` - Basic kubecl commands.
   * `kubernetes_deployment.md` - Information on Deployments.
+  * `kubernetes_ingress.md` - Ingreed and networking.
   * `kubernetes_pod.md` - Information on Pods.
   * `kubernetes_probes.md` - Information on Probes.
   * `kubernetes_resources.md` - Information on Resources.
   * `kubernetes_service.md` - Information on Services.
   * `minikube.md` - Install and use Minikube.
-* `linux` - Directory of cheatsheets on various Linux topics.
+* `Linux` - Directory of cheatsheets on various Linux topics.
   * `Arch.md` - Commands used to setup Arch Linux distribution.
   * `awk.md` - Use awk to parse command line output.
   * `beeper.md` - Play Empire Anthem on motherboard beeper.
   * `bash-conditions.md` - Conditionals in Bash.
   * `bash-control-flow.md` - Control flow in Bash.
   * `certificates.md` - Manage TLS certificates using certtool and openssl.
-  * `one_liners.md` - One-line bash scripts.
   * `curl-wget.md` - Download files and read html page with curl and wget.
   * `diagnostics.md` - Disk usage and other system diagnostics.
   * `diagnostics-scripts.md` - Helpful scripts for Linus syst diagnostics.
@@ -97,7 +97,9 @@ about cheat sheets. Here is what it can do now:
   * `kernel.md` - Modify and install custom Linux kernel.
   * `logs.md` - Manage logs and configuration of a centralized log server.
   * `network.md` - Basic network managing, such as configuration of network interfaces and ports.
-  * `network-diagnostics.md` - Network diagnostics using mtp, traceroute and tracepath.
+  * `network-diagnostics.md` - Network diagnostics using mtp, traceroute and tracepath.o
+  * `one_liners.md` - One-line bash scripts.
+  * `openssl.md` - Create and inspect TLS certificates.
   * `process.md` - Find information about running processes and top utility.
   * `random.md` - Some random Linux commands, i.e copy CLI output to clipboard, check GUI session etc.
   * `sed.md` - sed command to edit cli output.
@@ -107,5 +109,5 @@ about cheat sheets. Here is what it can do now:
   * `top.md` - Systems stats with top command.
   * `users-acess.md` - Manage users, groups and their access.
 * `Virtualization`
-  * `vboxmanage.md` -> Cheat sheet on vboxmanage.
-  * `virtualbox_issues.md` -> Common issues in Virtualbox
+  * `vboxmanage.md` - Cheat sheet on vboxmanage.
+  * `virtualbox_issues.md` - Common issues in Virtualbox
