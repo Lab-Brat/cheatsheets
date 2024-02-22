@@ -1,6 +1,5 @@
 #!/usr/bin/python3.11
 import os
-import re
 import argparse
 import subprocess
 
@@ -21,7 +20,8 @@ def get_files_and_dirs(root_path):
 
 def get_entries_from_readme(readme_path):
     """Return a list of entries parsed from the README.md file."""
-    readme_structure = {r".": []}
+    cheatsheet_dir = r"."
+    readme_structure = {cheatsheet_dir: []}
 
     if not os.path.exists(readme_path):
         return readme_structure
@@ -31,22 +31,28 @@ def get_entries_from_readme(readme_path):
     title_id = content.index("#### cheatsheets\n")
     content = content[title_id:]
 
-    links = re.findall(r"\`(.*?)\`", content)
+    newline_split = [
+        line.split(" - ")[0].replace("`", "")
+        for line in content.split("\n")
+        if "*" in line
+    ]
 
-    cheatsheet_dir = r"."
-    for link in links:
-        if ".md" in link or ".sh" in link:
-            readme_structure[cheatsheet_dir].append(link)
-        else:
-            cheatsheet_dir = link
-            readme_structure[link] = []
+    last_dir = cheatsheet_dir
+    for line in newline_split:
+        line = line.split(" ")
+        object_name = line[-1]
+        if ".md" in object_name or ".sh" in object_name:
+            readme_structure[last_dir].append(object_name)
+        elif object_name[0].upper:
+            readme_structure[object_name] = []
+            last_dir = object_name
 
     return readme_structure
 
 
 def find_missing_entries(structure, readme_structure):
     """
-    Return a list of entries present in the structure 
+    Return a list of entries present in the structure
     but missing in the readme_structure.
     """
     missing_entries = {}
