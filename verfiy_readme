@@ -3,7 +3,6 @@ import os
 import re
 import argparse
 import subprocess
-from pprint import pprint
 
 
 def get_files_and_dirs(root_path):
@@ -46,7 +45,10 @@ def get_entries_from_readme(readme_path):
 
 
 def find_missing_entries(structure, readme_structure):
-    """Return a list of entries present in the structure but missing in the readme_structure."""
+    """
+    Return a list of entries present in the structure
+    but missing in the readme_structure.
+    """
     missing_entries = {}
 
     for dir, files in structure.items():
@@ -81,9 +83,7 @@ def find_emtpy_files(structure):
             path = f"./cheatsheets/{dir}"
 
         for file in structure[dir]:
-            file_len = subprocess.check_output(
-                f"wc -l {path}/{file}", shell=True
-            )
+            file_len = subprocess.check_output(f"wc -l {path}/{file}", shell=True)
             file_len = int(file_len.decode("utf-8").split(" ")[0])
             if file_len <= 1:
                 small_files.append((file, file_len))
@@ -91,9 +91,7 @@ def find_emtpy_files(structure):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Verfify validity of README.md, and get insights about cheatsheets"
-    )
+    parser = argparse.ArgumentParser(description="Verfify the validity of README.md")
     parser.add_argument(
         "-r",
         "--readme",
@@ -102,7 +100,10 @@ if __name__ == "__main__":
         help="Path to the readme file.",
     )
     parser.add_argument(
-        "-s", "--small-files", action="store_true", help="Size of each batch."
+        "-s",
+        "--small-files",
+        action="store_true",
+        help="Print files that have no content.",
     )
 
     args = parser.parse_args()
@@ -115,8 +116,6 @@ if __name__ == "__main__":
         for file in small_files:
             print(f"{file[0]} has length {file[1]}")
     else:
-        readme_structure = get_entries_from_readme(
-            os.path.join("./", "README.md")
-        )
+        readme_structure = get_entries_from_readme(os.path.join("./", "README.md"))
         missing_entries = find_missing_entries(structure, readme_structure)
         print_missing_entries(missing_entries)
