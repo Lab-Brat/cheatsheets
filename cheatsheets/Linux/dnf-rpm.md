@@ -3,6 +3,7 @@
 * `dnf install <package>` -> install package
 * `dnf remove <package>` -> remove package
 * `dnf update` -> update all packages
+* `dnf downgrade <package>-<version>` - downgrade package to a lower version
 
 #### update
 * `dnf check-update` -> check available updates 
