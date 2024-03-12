@@ -49,6 +49,7 @@ about cheat sheets. Here is what it can do now:
   * `pacman.md` - Pacman and yay notes
 * `BashScripts` - Handy bash scripts.
   * `clean_dir.sh` - Delete old filed in a directory.
+  * `fw_iptables_manage.sh` - Add/remove a predifined set of iptables to/from INPUT chain.
   * `get_docker_images_du.sh` - Read docker images sizes that are older than 2w and sum it up.
   * `repo_on_off.sh` - Enable/disabled repositories on RHEL in bulk.
 * `Containers` - Containerization theory and practice.
