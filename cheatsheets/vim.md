@@ -39,3 +39,13 @@ Shift+V
 select lines
 Shift+.
 ```
+
+#### Macros
+Use a macro to combine 2 lines into a comma separated line in a 100 lines file:
+* Go to the begging of the first line
+* `q2` -> define macro named 2
+* `Shift+v <down arrow> J` -> join 2 lines together with a space
+* `r ,` -> replace the space with ,
+* `<down arrow 0>` -> move to the line below and move the cursor to the beginning
+* `q` -> save macro
+* `49 @ 2` -> apply the macro for the rest of the file (100/2 - 1)
