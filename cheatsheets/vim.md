@@ -1,11 +1,17 @@
 ## VIM
-#### insert methods
+#### Insert methods
 * i -> insert before a character
 * I -> insert in the beggining of line
 * a -> insert after a character 
 * A -> insert in the end of line
 * o -> insert from a new line below
 * O -> insert from a new line above
+
+#### Move cursor
+* 0 -> Move cursor to the beginning
+* $ -> Move curson to the end
+* `f <space>` -> Move cursor to the next space
+* `F <space>` -> Move cursor to the previous space
 
 #### Command :
 * `:s/word_a/word_b/` -> change word_a to word_b on the selected line
