@@ -18,8 +18,9 @@
 * `:%s/word_a/word_b/g` -> change all word_a occurences to word_b on the whole file
 * `:g/word_a/d` -> delete all lines containing word_a
 * `:j` -> join the line the cursor is with the line below
-* `set paste` -> set mode to paste, which will not autoindent on paste
-* `set nopaste` -> turn of paste mode
+* `:sort` -> sort selected lines
+* `:set paste` -> set mode to paste, which will not autoindent on paste
+* `:set nopaste` -> turn of paste mode
 
 #### Combinations 
 * add space to multiple lines
