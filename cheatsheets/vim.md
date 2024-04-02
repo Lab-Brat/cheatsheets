@@ -8,6 +8,10 @@
 * O -> insert from a new line above
 
 #### Move cursor
+* w -> Move cursor forward to the beginning of the new word
+* b -> Move cursor backwards to the beginning of the new word
+* e -> Move cursor forward to the end of the new word
+* ge -> Move cursor backwards to the end of the new word
 * 0 -> Move cursor to the beginning
 * $ -> Move curson to the end
 * `f <space>` -> Move cursor to the next space
