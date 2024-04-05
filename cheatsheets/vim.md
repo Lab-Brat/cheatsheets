@@ -16,6 +16,13 @@
 * $ -> Move curson to the end
 * `f <space>` -> Move cursor to the next space
 * `F <space>` -> Move cursor to the previous space
+* `t <space>` -> Move cursor to just before the next space
+* `T <space>` -> Move cursor to just before the previous space
+* `;` -> Used after fFtT, jumps to next occurence
+* `{` -> Move one paragraph up
+* `}` -> Move one paragraph down
+* `/{pattern}` -> search below
+* `?{pattern}` -> search before
 
 #### Command :
 * `:s/word_a/word_b/` -> change word_a to word_b on the selected line
