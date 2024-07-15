@@ -92,6 +92,7 @@ about cheat sheets. Here is what it can do now:
   * `firewall-firewalld-scripts.md` - Bash scripts for firewalld configuration.
   * `firewall-firewalld.md` - RHEL specific firewalld and Debian specific ufw.
   * `firewall-iptables.md` - Firewall configuration with iptables.
+  * `fsck.md` - Run fsck filesystem checks.
   * `grep.md` - search and filter text with grep.
   * `grub.md` - Boot process and grub configuration.
   * `infra.md` - Infrastructure administrations tools, like ldapsearch, dig etc.
