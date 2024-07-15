@@ -38,3 +38,11 @@ Allow SSH ports
 #### Deleting
 * `iptables -L --line-number` -> list all rules with line numbers
 * `iptables -D INPUT <ID>` -> delete rule with ID
+
+
+#### Examples
+List rules and insert in a specific spot in INPUT chain:
+```bash
+iptables -t filter -L --line-numbers -n
+iptables -I INPUT 1 -i eth1 -d 192.168.66.6 -j ACCEPT
+```
