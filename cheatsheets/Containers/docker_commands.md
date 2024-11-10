@@ -27,6 +27,7 @@
 * `curl -X GET http://localhost:5000/v2/_catalog` -> list available images from local registry 
 * `docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_name>` -> get IP address of the container 
 * `docker system prune -a` -> clean all images, containers and networks
+* `docker inspect nginx_reverse_proxy | grep com.docker.compose | grep -E "config|dir"` -> find compose config file location from running contianer
 
 #### Dockerfile
 * `docker build -t <image-name> .` -> build image from a Dockerfile in current directory 

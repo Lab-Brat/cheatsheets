@@ -6,3 +6,5 @@
 * `cat ~/.ssh/<key>.pub | ssh <hostname.com> "sudo bash -c 'cat >> /root/.ssh/authorized_keys'"` -> add SSH key to root user
 * `cat ~/.ssh/id_rsa | ssh <hostname> "sudo bash -c 'cat >> /root/.ssh/authorized_keys'"` -> apped key to root user via ssh
 * `for f in $(ls src/*.py); do wc -l $f; done | awk '{sum += $1} END {print sum}'` -> count the total lines of code in .py files
+* `cat ips.txt | awk 'BEGIN {ORS=":9100|"} {print}'` -> joing every line in the file and append :9100| to each line end
+
