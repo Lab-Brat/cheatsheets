@@ -31,3 +31,4 @@
   * `sed -i 's/com/org/' <url>` -> change .com -> .org
   * `sed 's/^.*org//' <url>` -> keep filename, i.e `/index.html`
   * `sed 's/^.*com/{&}/' <url>` -> surround the url with braces, i.e `{http://www.example.com}/index.html`
+* `sed 's/\(.*\) \(.*\)/\2 \1/' input_file` -> swap places of the two matches separated by 1 space
