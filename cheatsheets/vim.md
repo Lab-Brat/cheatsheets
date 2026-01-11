@@ -28,6 +28,7 @@
 * `:s/word_a/word_b/` -> change word_a to word_b on the selected line
 * `:%s/word_a/word_b/g` -> change all word_a occurences to word_b on the whole file
 * `:g/word_a/d` -> delete all lines containing word_a
+* `:g/^$/d` -> delete all empty lines
 * `:j` -> join the line the cursor is with the line below
 * `:sort` -> sort selected lines
 * `:set paste` -> set mode to paste, which will not autoindent on paste
